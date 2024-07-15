@@ -321,7 +321,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>2</wLevel>
+            <wLevel>1</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\USER;..\FWLIB\inc;..\CORE;..\OBJ</IncludePath>
+              <IncludePath>..\USER;..\FWLIB\inc;..\CORE;..\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -625,17 +625,57 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>OBJ</GroupName>
+          <GroupName>driver</GroupName>
           <Files>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\lcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\lcd_init.c</FilePath>
+            </File>
             <File>
               <FileName>LED.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\LED.c</FilePath>
+              <FilePath>..\driver\LED.c</FilePath>
             </File>
             <File>
-              <FileName>LED.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\LED.h</FilePath>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\sys.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>dac.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\driver\pwm.c</FilePath>
             </File>
           </Files>
         </Group>
