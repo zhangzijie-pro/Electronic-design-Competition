@@ -1,62 +1,31 @@
-/*
- * FILE               : pwm.c
- * DESCRIPTION        : This file is iCore3 pwm driver.
- * Author             : ysloveivy
- * Copyright          :
- *
- * History
- * -------------------
- * Rev                : 0.00
- * Date               : 11/21/2015
- *
- * create.
- * -------------------
- */
-//------------------------- Include -----------------------//
-#include "..\include\pwm.h"
+#include "pwm.h"
 #include "..\fwlib\inc\stm32f4xx_gpio.h"
 #include "..\fwlib\inc\stm32f4xx_rcc.h"
 #include "..\fwlib\inc\stm32f4xx_tim.h"
 
-//------------------- Function Prototype ------------------//
-static int initialize(void);
-static int set_compare(int temp);
+int PWM_initialize(void);
+int PWM_set_compare(int temp);
 
-//------------------------ Variable -----------------------//
-PWM_T pwm = {
-	.initialize = initialize,
-	.set_compare = set_compare
-};
-//------------------------ Function -----------------------//
-/*
- * Name               : initialize
- * Description        : ---
- * Author             : ysloveivy.
- *
- * History
- * -------------------
- * Rev                : 0.00
- * Date               : 11/21/2015
- * 
- * create.
- * -------------------
- */
-static int initialize(void)
+
+
+int PWM_initialize(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
 	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
 	TIM_OCInitTypeDef  TIM_OCInitStructure;
 	
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM8,ENABLE);                       //开启TIM8定时器的时钟
-	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOI, ENABLE);                     //开启GPIOI的时钟
-	GPIO_PinAFConfig(GPIOI,GPIO_PinSource5,GPIO_AF_TIM8);                     //PI5复用为TIM8
+	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC, ENABLE);                     //开启GPIOI的时钟
+	GPIO_PinAFConfig(GPIOC,GPIO_PinSource6,GPIO_AF_TIM8);                     //PI5复用为TIM8
 	//GPIO初始化
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_5;
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;                              //模式设为复用
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
 	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;                            //复用推挽输出
 	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
-	GPIO_Init(GPIOI,&GPIO_InitStructure);
+	GPIO_Init(GPIOC,&GPIO_InitStructure);
+	
+	
 	//TIM8初始化
 	TIM_TimeBaseStructure.TIM_Prescaler = 83;                                 //设置预分频值
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;               //向上计数模式
@@ -87,20 +56,8 @@ static int initialize(void)
 	return 0;
 }
 
-/*
- * Name               : set_compare
- * Description        : ---
- * Author             : ysloveivy.
- *
- * History
- * -------------------
- * Rev                : 0.00
- * Date               : 11/21/2015
- * 
- * create.
- * -------------------
- */
-static int set_compare(int temp)
+
+int PWM_set_compare(int temp)
 {
 	TIM_SetCompare1(TIM8,temp);	                                              //修改占空比
 	return 0;

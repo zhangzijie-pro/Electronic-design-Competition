@@ -5,10 +5,10 @@
 <h2>Tool Versions:</h2>
 IDE-Version: μVision V5.27.1.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 lenovo, 1, LIC=----
+License Information: 1 lenovo, 1, LIC=65ISZ-JIYB2-GKRBG-V4LVW-EJBC5-I66T6
  
 Tool Versions:
-Toolchain:       MDK-Lite  Version: 5.27.1.0
+Toolchain:       MDK-ARM Plus  Version: 5.27.1.0
 Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 6 (build 750)
 Assembler:       Armasm.exe V5.06 update 6 (build 750)
@@ -22,15 +22,1195 @@ Dialog DLL:      TCM.DLL V1.36.1.0
  
 <h2>Project:</h2>
 C:\Users\lenovo\Desktop\STM32\USER\test.uvprojx
-Project File Date:  07/14/2024
+Project File Date:  07/21/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'test'
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_cryp.c...
+..\FWLIB\src\stm32f4xx_cryp.c(236): error:  #20: identifier "CRYP" is undefined
+    CRYP->CR &= ~CRYP_CR_ALGOMODE;
+..\FWLIB\src\stm32f4xx_cryp.c(236): error:  #20: identifier "CRYP_CR_ALGOMODE" is undefined
+    CRYP->CR &= ~CRYP_CR_ALGOMODE;
+..\FWLIB\src\stm32f4xx_cryp.c(240): error:  #20: identifier "CRYP_CR_DATATYPE" is undefined
+    CRYP->CR &= ~CRYP_CR_DATATYPE;
+..\FWLIB\src\stm32f4xx_cryp.c(250): error:  #20: identifier "CRYP_CR_KEYSIZE" is undefined
+      CRYP->CR &= ~CRYP_CR_KEYSIZE;
+..\FWLIB\src\stm32f4xx_cryp.c(257): error:  #20: identifier "CRYP_CR_ALGODIR" is undefined
+    CRYP->CR &= ~CRYP_CR_ALGODIR;
+..\FWLIB\src\stm32f4xx_cryp.c(292): error:  #20: identifier "CRYP" is undefined
+    CRYP->K0LR = CRYP_KeyInitStruct->CRYP_Key0Left;
+..\FWLIB\src\stm32f4xx_cryp.c(328): error:  #20: identifier "CRYP" is undefined
+    CRYP->IV0LR = CRYP_IVInitStruct->CRYP_IV0Left;
+..\FWLIB\src\stm32f4xx_cryp.c(363): error:  #20: identifier "CRYP_CR_GCM_CCMPH_0" is undefined
+    assert_param(IS_CRYP_PHASE(CRYP_Phase));
+..\FWLIB\src\stm32f4xx_cryp.c(363): error:  #20: identifier "CRYP_CR_GCM_CCMPH_1" is undefined
+    assert_param(IS_CRYP_PHASE(CRYP_Phase));
+..\FWLIB\src\stm32f4xx_cryp.c(363): error:  #20: identifier "CRYP_CR_GCM_CCMPH" is undefined
+    assert_param(IS_CRYP_PHASE(CRYP_Phase));
+..\FWLIB\src\stm32f4xx_cryp.c(366): error:  #20: identifier "CRYP" is undefined
+    tempcr = CRYP->CR;
+..\FWLIB\src\stm32f4xx_cryp.c(387): error:  #20: identifier "CRYP" is undefined
+    CRYP->CR |= CRYP_CR_FFLUSH;
+..\FWLIB\src\stm32f4xx_cryp.c(387): error:  #20: identifier "CRYP_CR_FFLUSH" is undefined
+    CRYP->CR |= CRYP_CR_FFLUSH;
+..\FWLIB\src\stm32f4xx_cryp.c(404): error:  #20: identifier "CRYP" is undefined
+      CRYP->CR |= CRYP_CR_CRYPEN;
+..\FWLIB\src\stm32f4xx_cryp.c(404): error:  #20: identifier "CRYP_CR_CRYPEN" is undefined
+      CRYP->CR |= CRYP_CR_CRYPEN;
+..\FWLIB\src\stm32f4xx_cryp.c(409): error:  #20: identifier "CRYP" is undefined
+      CRYP->CR &= ~CRYP_CR_CRYPEN;
+..\FWLIB\src\stm32f4xx_cryp.c(409): error:  #20: identifier "CRYP_CR_CRYPEN" is undefined
+      CRYP->CR &= ~CRYP_CR_CRYPEN;
+..\FWLIB\src\stm32f4xx_cryp.c(441): error:  #20: identifier "CRYP" is undefined
+    CRYP->DR = Data;
+..\FWLIB\src\stm32f4xx_cryp.c(451): error:  #20: identifier "CRYP" is undefined
+    return CRYP->DOUT;
+..\FWLIB\src\stm32f4xx_cryp.c(498): error:  #20: identifier "CRYP" is undefined
+    CRYP->DMACR &= ~(uint32_t)CRYP_DMACR_DIEN;
+..\FWLIB\src\stm32f4xx_cryp.c(498): error:  #20: identifier "CRYP_DMACR_DIEN" is undefined
+    CRYP->DMACR &= ~(uint32_t)CRYP_DMACR_DIEN;
+..\FWLIB\src\stm32f4xx_cryp.c(504): error:  #20: identifier "CRYP_CR_ALGOMODE_TDES_ECB" is undefined
+    if ((CRYP->CR & (uint32_t)(CRYP_CR_ALGOMODE_TDES_ECB | CRYP_CR_ALGOMODE_TDES_CBC)) != (uint32_t)0 )/* TDES */
+..\FWLIB\src\stm32f4xx_cryp.c(504): error:  #20: identifier "CRYP_CR_ALGOMODE_TDES_CBC" is undefined
+    if ((CRYP->CR & (uint32_t)(CRYP_CR_ALGOMODE_TDES_ECB | CRYP_CR_ALGOMODE_TDES_CBC)) != (uint32_t)0 )/* TDES */
+..\FWLIB\src\stm32f4xx_cryp.c(506): error:  #20: identifier "CRYP_SR_IFEM" is undefined
+      ckeckmask =  CRYP_SR_IFEM | CRYP_SR_BUSY ;
+..\FWLIB\src\stm32f4xx_cryp.c(506): error:  #20: identifier "CRYP_SR_BUSY" is undefined
+      ckeckmask =  CRYP_SR_IFEM | CRYP_SR_BUSY ;
+..\FWLIB\src\stm32f4xx_cryp.c(510): error:  #20: identifier "CRYP_SR_IFEM" is undefined
+      ckeckmask =  CRYP_SR_IFEM | CRYP_SR_BUSY | CRYP_SR_OFNE;
+..\FWLIB\src\stm32f4xx_cryp.c(510): error:  #20: identifier "CRYP_SR_BUSY" is undefined
+      ckeckmask =  CRYP_SR_IFEM | CRYP_SR_BUSY | CRYP_SR_OFNE;
+..\FWLIB\src\stm32f4xx_cryp.c(510): error:  #20: identifier "CRYP_SR_OFNE" is undefined
+      ckeckmask =  CRYP_SR_IFEM | CRYP_SR_BUSY | CRYP_SR_OFNE;
+..\FWLIB\src\stm32f4xx_cryp.c(518): error:  #20: identifier "CRYP_SR_IFEM" is undefined
+    while ((timeout != MAX_TIMEOUT) && (bitstatus != CRYP_SR_IFEM));
+..\FWLIB\src\stm32f4xx_cryp.c(520): error:  #20: identifier "CRYP_SR_IFEM" is undefined
+    if ((CRYP->SR & ckeckmask) != CRYP_SR_IFEM)
+..\FWLIB\src\stm32f4xx_cryp.c: 0 warnings, 30 errors
+compiling misc.c...
+compiling stm32f4xx_cryp_aes.c...
+..\FWLIB\src\stm32f4xx_cryp_aes.c(779): error:  #20: identifier "CRYP_CR_GCM_CCMPH_0" is undefined
+        CRYP_PhaseConfig(CRYP_Phase_Header);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(827): error:  #20: identifier "CRYP_CR_GCM_CCMPH_1" is undefined
+        CRYP_PhaseConfig(CRYP_Phase_Payload);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(889): error:  #20: identifier "CRYP_CR_GCM_CCMPH" is undefined
+      CRYP_PhaseConfig(CRYP_Phase_Final);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(956): error:  #20: identifier "CRYP_CR_GCM_CCMPH_0" is undefined
+        CRYP_PhaseConfig(CRYP_Phase_Header);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(1004): error:  #20: identifier "CRYP_CR_GCM_CCMPH_1" is undefined
+        CRYP_PhaseConfig(CRYP_Phase_Payload);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(1066): error:  #20: identifier "CRYP_CR_GCM_CCMPH" is undefined
+      CRYP_PhaseConfig(CRYP_Phase_Final);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(1335): error:  #20: identifier "CRYP_CR_GCM_CCMPH_0" is undefined
+        CRYP_PhaseConfig(CRYP_Phase_Header);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(1383): error:  #20: identifier "CRYP_CR_GCM_CCMPH_1" is undefined
+        CRYP_PhaseConfig(CRYP_Phase_Payload);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(1446): error:  #20: identifier "CRYP_CR_GCM_CCMPH" is undefined
+      CRYP_PhaseConfig(CRYP_Phase_Final);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(1524): error:  #20: identifier "CRYP_CR_GCM_CCMPH_0" is undefined
+        CRYP_PhaseConfig(CRYP_Phase_Header);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(1572): error:  #20: identifier "CRYP_CR_GCM_CCMPH_1" is undefined
+        CRYP_PhaseConfig(CRYP_Phase_Payload);
+..\FWLIB\src\stm32f4xx_cryp_aes.c(1635): error:  #20: identifier "CRYP_CR_GCM_CCMPH" is undefined
+      CRYP_PhaseConfig(CRYP_Phase_Final);
+..\FWLIB\src\stm32f4xx_cryp_aes.c: 0 warnings, 12 errors
+compiling stm32f4xx_crc.c...
+compiling stm32f4xx_cec.c...
+compiling stm32f4xx_cryp_des.c...
+compiling stm32f4xx_dbgmcu.c...
+compiling stm32f4xx_cryp_tdes.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_dfsdm.c...
+compiling stm32f4xx_dcmi.c...
+compiling stm32f4xx_can.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_dma2d.c...
+..\FWLIB\src\stm32f4xx_dma2d.c(141): error:  #20: identifier "DMA2D" is undefined
+    DMA2D->CR &= (uint32_t)CR_MASK;
+..\FWLIB\src\stm32f4xx_dma2d.c(145): error:  #20: identifier "DMA2D_OPFCCR_CM" is undefined
+    DMA2D->OPFCCR &= ~(uint32_t)DMA2D_OPFCCR_CM;
+..\FWLIB\src\stm32f4xx_dma2d.c(195): error:  #20: identifier "DMA2D_OOR_LO" is undefined
+    DMA2D->OOR &= ~(uint32_t)DMA2D_OOR_LO;
+..\FWLIB\src\stm32f4xx_dma2d.c(200): error:  #20: identifier "DMA2D_NLR_NL" is undefined
+    DMA2D->NLR &= ~(DMA2D_NLR_NL | DMA2D_NLR_PL);
+..\FWLIB\src\stm32f4xx_dma2d.c(200): error:  #20: identifier "DMA2D_NLR_PL" is undefined
+    DMA2D->NLR &= ~(DMA2D_NLR_NL | DMA2D_NLR_PL);
+..\FWLIB\src\stm32f4xx_dma2d.c(244): error:  #20: identifier "DMA2D" is undefined
+      DMA2D->CR |= (uint32_t)DMA2D_CR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c(244): error:  #20: identifier "DMA2D_CR_START" is undefined
+      DMA2D->CR |= (uint32_t)DMA2D_CR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c(256): error:  #20: identifier "DMA2D" is undefined
+      DMA2D->CR |= (uint32_t)DMA2D_CR_ABORT;
+..\FWLIB\src\stm32f4xx_dma2d.c(256): error:  #20: identifier "DMA2D_CR_ABORT" is undefined
+      DMA2D->CR |= (uint32_t)DMA2D_CR_ABORT;
+..\FWLIB\src\stm32f4xx_dma2d.c(274): error:  #20: identifier "DMA2D" is undefined
+      DMA2D->CR |= (uint32_t)DMA2D_CR_SUSP;
+..\FWLIB\src\stm32f4xx_dma2d.c(274): error:  #20: identifier "DMA2D_CR_SUSP" is undefined
+      DMA2D->CR |= (uint32_t)DMA2D_CR_SUSP;
+..\FWLIB\src\stm32f4xx_dma2d.c(279): error:  #20: identifier "DMA2D" is undefined
+      DMA2D->CR &= ~(uint32_t)DMA2D_CR_SUSP;
+..\FWLIB\src\stm32f4xx_dma2d.c(279): error:  #20: identifier "DMA2D_CR_SUSP" is undefined
+      DMA2D->CR &= ~(uint32_t)DMA2D_CR_SUSP;
+..\FWLIB\src\stm32f4xx_dma2d.c(312): error:  #20: identifier "DMA2D" is undefined
+    DMA2D->FGMAR = (DMA2D_FG_InitStruct->DMA2D_FGMA);
+..\FWLIB\src\stm32f4xx_dma2d.c(315): error:  #20: identifier "DMA2D_FGOR_LO" is undefined
+    DMA2D->FGOR &= ~(uint32_t)DMA2D_FGOR_LO;
+..\FWLIB\src\stm32f4xx_dma2d.c(328): error:  #20: identifier "DMA2D_FGCOLR_BLUE" is undefined
+    DMA2D->FGCOLR &= ~(DMA2D_FGCOLR_BLUE | DMA2D_FGCOLR_GREEN | DMA2D_FGCOLR_RED);
+..\FWLIB\src\stm32f4xx_dma2d.c(328): error:  #20: identifier "DMA2D_FGCOLR_GREEN" is undefined
+    DMA2D->FGCOLR &= ~(DMA2D_FGCOLR_BLUE | DMA2D_FGCOLR_GREEN | DMA2D_FGCOLR_RED);
+..\FWLIB\src\stm32f4xx_dma2d.c(328): error:  #20: identifier "DMA2D_FGCOLR_RED" is undefined
+    DMA2D->FGCOLR &= ~(DMA2D_FGCOLR_BLUE | DMA2D_FGCOLR_GREEN | DMA2D_FGCOLR_RED);
+..\FWLIB\src\stm32f4xx_dma2d.c(409): error:  #20: identifier "DMA2D" is undefined
+    DMA2D->BGMAR = (DMA2D_BG_InitStruct->DMA2D_BGMA);
+..\FWLIB\src\stm32f4xx_dma2d.c(412): error:  #20: identifier "DMA2D_BGOR_LO" is undefined
+    DMA2D->BGOR &= ~(uint32_t)DMA2D_BGOR_LO;
+..\FWLIB\src\stm32f4xx_dma2d.c(425): error:  #20: identifier "DMA2D_BGCOLR_BLUE" is undefined
+    DMA2D->BGCOLR &= ~(DMA2D_BGCOLR_BLUE | DMA2D_BGCOLR_GREEN | DMA2D_BGCOLR_RED);
+..\FWLIB\src\stm32f4xx_dma2d.c(425): error:  #20: identifier "DMA2D_BGCOLR_GREEN" is undefined
+    DMA2D->BGCOLR &= ~(DMA2D_BGCOLR_BLUE | DMA2D_BGCOLR_GREEN | DMA2D_BGCOLR_RED);
+..\FWLIB\src\stm32f4xx_dma2d.c(425): error:  #20: identifier "DMA2D_BGCOLR_RED" is undefined
+    DMA2D->BGCOLR &= ~(DMA2D_BGCOLR_BLUE | DMA2D_BGCOLR_GREEN | DMA2D_BGCOLR_RED);
+..\FWLIB\src\stm32f4xx_dma2d.c(492): error:  #20: identifier "DMA2D" is undefined
+      DMA2D->FGPFCCR |= DMA2D_FGPFCCR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c(492): error:  #20: identifier "DMA2D_FGPFCCR_START" is undefined
+      DMA2D->FGPFCCR |= DMA2D_FGPFCCR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c(497): error:  #20: identifier "DMA2D" is undefined
+      DMA2D->FGPFCCR &= (uint32_t)~DMA2D_FGPFCCR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c(497): error:  #20: identifier "DMA2D_FGPFCCR_START" is undefined
+      DMA2D->FGPFCCR &= (uint32_t)~DMA2D_FGPFCCR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c(516): error:  #20: identifier "DMA2D" is undefined
+      DMA2D->BGPFCCR |= DMA2D_BGPFCCR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c(516): error:  #20: identifier "DMA2D_BGPFCCR_START" is undefined
+      DMA2D->BGPFCCR |= DMA2D_BGPFCCR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c(521): error:  #20: identifier "DMA2D" is undefined
+      DMA2D->BGPFCCR &= (uint32_t)~DMA2D_BGPFCCR_START;
+..\FWLIB\src\stm32f4xx_dma2d.c: 0 warnings, 30 errors
+compiling stm32f4xx_hash_md5.c...
+..\FWLIB\src\stm32f4xx_hash_md5.c(106): error:  #20: identifier "HASH_CR_ALGO_0" is undefined
+    MD5_HASH_InitStructure.HASH_AlgoSelection = HASH_AlgoSelection_MD5;
+..\FWLIB\src\stm32f4xx_hash_md5.c(108): error:  #20: identifier "HASH_CR_DATATYPE_1" is undefined
+    MD5_HASH_InitStructure.HASH_DataType = HASH_DataType_8b;
+..\FWLIB\src\stm32f4xx_hash_md5.c(127): error:  #20: identifier "HASH_SR_BUSY" is undefined
+      busystatus = HASH_GetFlagStatus(HASH_FLAG_BUSY);
+..\FWLIB\src\stm32f4xx_hash_md5.c(186): error:  #20: identifier "HASH_CR_ALGO_0" is undefined
+    MD5_HASH_InitStructure.HASH_AlgoSelection = HASH_AlgoSelection_MD5;
+..\FWLIB\src\stm32f4xx_hash_md5.c(187): error:  #20: identifier "HASH_CR_MODE" is undefined
+    MD5_HASH_InitStructure.HASH_AlgoMode = HASH_AlgoMode_HMAC;
+..\FWLIB\src\stm32f4xx_hash_md5.c(188): error:  #20: identifier "HASH_CR_DATATYPE_1" is undefined
+    MD5_HASH_InitStructure.HASH_DataType = HASH_DataType_8b;
+..\FWLIB\src\stm32f4xx_hash_md5.c(192): error:  #20: identifier "HASH_CR_LKEY" is undefined
+      MD5_HASH_InitStructure.HASH_HMACKeyType = HASH_HMACKeyType_LongKey;
+..\FWLIB\src\stm32f4xx_hash_md5.c(217): error:  #20: identifier "HASH_SR_BUSY" is undefined
+      busystatus = HASH_GetFlagStatus(HASH_FLAG_BUSY);
+..\FWLIB\src\stm32f4xx_hash_md5.c(244): error:  #20: identifier "HASH_SR_BUSY" is undefined
+         busystatus = HASH_GetFlagStatus(HASH_FLAG_BUSY);
+..\FWLIB\src\stm32f4xx_hash_md5.c(272): error:  #20: identifier "HASH_SR_BUSY" is undefined
+            busystatus = HASH_GetFlagStatus(HASH_FLAG_BUSY);
+..\FWLIB\src\stm32f4xx_hash_md5.c: 0 warnings, 10 errors
+compiling stm32f4xx_hash.c...
+..\FWLIB\src\stm32f4xx_hash.c(187): error:  #20: identifier "HASH_CR_ALGO_1" is undefined
+    assert_param(IS_HASH_ALGOSELECTION(HASH_InitStruct->HASH_AlgoSelection));
+..\FWLIB\src\stm32f4xx_hash.c(187): error:  #20: identifier "HASH_CR_ALGO" is undefined
+    assert_param(IS_HASH_ALGOSELECTION(HASH_InitStruct->HASH_AlgoSelection));
+..\FWLIB\src\stm32f4xx_hash.c(187): error:  #20: identifier "HASH_CR_ALGO_0" is undefined
+    assert_param(IS_HASH_ALGOSELECTION(HASH_InitStruct->HASH_AlgoSelection));
+..\FWLIB\src\stm32f4xx_hash.c(188): error:  #20: identifier "HASH_CR_DATATYPE_0" is undefined
+    assert_param(IS_HASH_DATATYPE(HASH_InitStruct->HASH_DataType));
+..\FWLIB\src\stm32f4xx_hash.c(188): error:  #20: identifier "HASH_CR_DATATYPE_1" is undefined
+    assert_param(IS_HASH_DATATYPE(HASH_InitStruct->HASH_DataType));
+..\FWLIB\src\stm32f4xx_hash.c(188): error:  #20: identifier "HASH_CR_DATATYPE" is undefined
+    assert_param(IS_HASH_DATATYPE(HASH_InitStruct->HASH_DataType));
+..\FWLIB\src\stm32f4xx_hash.c(189): error:  #20: identifier "HASH_CR_MODE" is undefined
+    assert_param(IS_HASH_ALGOMODE(HASH_InitStruct->HASH_AlgoMode));
+..\FWLIB\src\stm32f4xx_hash.c(192): error:  #20: identifier "HASH" is undefined
+    HASH->CR &= ~ (HASH_CR_ALGO | HASH_CR_DATATYPE | HASH_CR_MODE);
+..\FWLIB\src\stm32f4xx_hash.c(200): error:  #20: identifier "HASH_CR_LKEY" is undefined
+      assert_param(IS_HASH_HMAC_KEYTYPE(HASH_InitStruct->HASH_HMACKeyType));
+..\FWLIB\src\stm32f4xx_hash.c(207): error:  #20: identifier "HASH_CR_INIT" is undefined
+    HASH->CR |= HASH_CR_INIT;  
+..\FWLIB\src\stm32f4xx_hash.c(245): error:  #20: identifier "HASH" is undefined
+    HASH->CR |= HASH_CR_INIT;
+..\FWLIB\src\stm32f4xx_hash.c(245): error:  #20: identifier "HASH_CR_INIT" is undefined
+    HASH->CR |= HASH_CR_INIT;
+..\FWLIB\src\stm32f4xx_hash.c(290): error:  #20: identifier "HASH" is undefined
+    HASH->STR &= ~(HASH_STR_NBW);
+..\FWLIB\src\stm32f4xx_hash.c(290): error:  #20: identifier "HASH_STR_NBW" is undefined
+    HASH->STR &= ~(HASH_STR_NBW);
+..\FWLIB\src\stm32f4xx_hash.c(302): error:  #20: identifier "HASH" is undefined
+    HASH->DIN = Data;
+..\FWLIB\src\stm32f4xx_hash.c(313): error:  #20: identifier "HASH" is undefined
+    return ((HASH->CR & HASH_CR_NBW) >> 8);
+..\FWLIB\src\stm32f4xx_hash.c(313): error:  #20: identifier "HASH_CR_NBW" is undefined
+    return ((HASH->CR & HASH_CR_NBW) >> 8);
+..\FWLIB\src\stm32f4xx_hash.c(331): error:  #20: identifier "HASH" is undefined
+    HASH_MessageDigest->Data[0] = HASH->HR[0];
+..\FWLIB\src\stm32f4xx_hash.c(336): error:  #20: identifier "HASH_DIGEST" is undefined
+    HASH_MessageDigest->Data[5] = HASH_DIGEST->HR[5];
+..\FWLIB\src\stm32f4xx_hash.c(349): error:  #20: identifier "HASH" is undefined
+    HASH->STR |= HASH_STR_DCAL;
+..\FWLIB\src\stm32f4xx_hash.c(349): error:  #20: identifier "HASH_STR_DCAL" is undefined
+    HASH->STR |= HASH_STR_DCAL;
+..\FWLIB\src\stm32f4xx_hash.c(394): error:  #20: identifier "HASH" is undefined
+    HASH_ContextSave->HASH_IMR = HASH->IMR;  
+..\FWLIB\src\stm32f4xx_hash.c(416): error:  #20: identifier "HASH" is undefined
+    HASH->IMR = HASH_ContextRestore->HASH_IMR;   
+..\FWLIB\src\stm32f4xx_hash.c(421): error:  #20: identifier "HASH_CR_INIT" is undefined
+    HASH->CR |= HASH_CR_INIT; 
+..\FWLIB\src\stm32f4xx_hash.c(466): error:  #20: identifier "HASH" is undefined
+      HASH->CR &= ~HASH_CR_MDMAT;
+..\FWLIB\src\stm32f4xx_hash.c(466): error:  #20: identifier "HASH_CR_MDMAT" is undefined
+      HASH->CR &= ~HASH_CR_MDMAT;
+..\FWLIB\src\stm32f4xx_hash.c(471): error:  #20: identifier "HASH" is undefined
+      HASH->CR |= HASH_CR_MDMAT;
+..\FWLIB\src\stm32f4xx_hash.c(471): error:  #20: identifier "HASH_CR_MDMAT" is undefined
+      HASH->CR |= HASH_CR_MDMAT;
+..\FWLIB\src\stm32f4xx_hash.c(490): error:  #20: identifier "HASH" is undefined
+      HASH->CR |= HASH_CR_DMAE;
+..\FWLIB\src\stm32f4xx_hash.c(490): error:  #20: identifier "HASH_CR_DMAE" is undefined
+      HASH->CR |= HASH_CR_DMAE;
+..\FWLIB\src\stm32f4xx_hash.c: 0 warnings, 30 errors
+compiling stm32f4xx_flash_ramfunc.c...
+..\FWLIB\src\stm32f4xx_flash_ramfunc.c(103): error:  #20: identifier "PWR_CR_FISSR" is undefined
+      CLEAR_BIT(PWR->CR, PWR_CR_FISSR);
+..\FWLIB\src\stm32f4xx_flash_ramfunc.c(108): error:  #20: identifier "PWR_CR_FISSR" is undefined
+      SET_BIT(PWR->CR, PWR_CR_FISSR);
+..\FWLIB\src\stm32f4xx_flash_ramfunc.c(126): error:  #20: identifier "PWR_CR_FMSSR" is undefined
+      SET_BIT(PWR->CR, PWR_CR_FMSSR);
+..\FWLIB\src\stm32f4xx_flash_ramfunc.c(131): error:  #20: identifier "PWR_CR_FMSSR" is undefined
+      CLEAR_BIT(PWR->CR, PWR_CR_FMSSR);
+..\FWLIB\src\stm32f4xx_flash_ramfunc.c: 0 warnings, 4 errors
+compiling stm32f4xx_hash_sha1.c...
+..\FWLIB\src\stm32f4xx_hash_sha1.c(107): error:  #20: identifier "HASH_CR_DATATYPE_1" is undefined
+    SHA1_HASH_InitStructure.HASH_DataType = HASH_DataType_8b;
+..\FWLIB\src\stm32f4xx_hash_sha1.c(126): error:  #20: identifier "HASH_SR_BUSY" is undefined
+      busystatus = HASH_GetFlagStatus(HASH_FLAG_BUSY);
+..\FWLIB\src\stm32f4xx_hash_sha1.c(188): error:  #20: identifier "HASH_CR_MODE" is undefined
+    SHA1_HASH_InitStructure.HASH_AlgoMode = HASH_AlgoMode_HMAC;
+..\FWLIB\src\stm32f4xx_hash_sha1.c(189): error:  #20: identifier "HASH_CR_DATATYPE_1" is undefined
+    SHA1_HASH_InitStructure.HASH_DataType = HASH_DataType_8b;
+..\FWLIB\src\stm32f4xx_hash_sha1.c(193): error:  #20: identifier "HASH_CR_LKEY" is undefined
+      SHA1_HASH_InitStructure.HASH_HMACKeyType = HASH_HMACKeyType_LongKey;
+..\FWLIB\src\stm32f4xx_hash_sha1.c(218): error:  #20: identifier "HASH_SR_BUSY" is undefined
+      busystatus = HASH_GetFlagStatus(HASH_FLAG_BUSY);
+..\FWLIB\src\stm32f4xx_hash_sha1.c(246): error:  #20: identifier "HASH_SR_BUSY" is undefined
+        busystatus = HASH_GetFlagStatus(HASH_FLAG_BUSY);
+..\FWLIB\src\stm32f4xx_hash_sha1.c(274): error:  #20: identifier "HASH_SR_BUSY" is undefined
+          busystatus = HASH_GetFlagStatus(HASH_FLAG_BUSY);
+..\FWLIB\src\stm32f4xx_hash_sha1.c: 0 warnings, 8 errors
+compiling stm32f4xx_fsmc.c...
+..\FWLIB\src\stm32f4xx_fsmc.c(374): error:  #20: identifier "FSMC_Bank2" is undefined
+      FSMC_Bank2->PCR2 = 0x00000018;
+..\FWLIB\src\stm32f4xx_fsmc.c(383): error:  #20: identifier "FSMC_Bank3" is undefined
+      FSMC_Bank3->PCR3 = 0x00000018;
+..\FWLIB\src\stm32f4xx_fsmc.c(421): error:  #20: identifier "FSMC_Bank2" is undefined
+      tmppcr = FSMC_Bank2->PCR2;
+..\FWLIB\src\stm32f4xx_fsmc.c(426): error:  #20: identifier "FSMC_Bank3" is undefined
+      tmppcr = FSMC_Bank3->PCR3;
+..\FWLIB\src\stm32f4xx_fsmc.c(446): error:  #20: identifier "FSMC_Bank2" is undefined
+      tmppmem = FSMC_Bank2->PMEM2;
+..\FWLIB\src\stm32f4xx_fsmc.c(451): error:  #20: identifier "FSMC_Bank3" is undefined
+      tmppmem = FSMC_Bank3->PMEM3;
+..\FWLIB\src\stm32f4xx_fsmc.c(467): error:  #20: identifier "FSMC_Bank2" is undefined
+      tmppatt = FSMC_Bank2->PATT2;
+..\FWLIB\src\stm32f4xx_fsmc.c(472): error:  #20: identifier "FSMC_Bank3" is undefined
+      tmppatt = FSMC_Bank3->PATT3;
+..\FWLIB\src\stm32f4xx_fsmc.c(488): error:  #20: identifier "FSMC_Bank2" is undefined
+      FSMC_Bank2->PCR2 = tmppcr;
+..\FWLIB\src\stm32f4xx_fsmc.c(495): error:  #20: identifier "FSMC_Bank3" is undefined
+      FSMC_Bank3->PCR3 = tmppcr;
+..\FWLIB\src\stm32f4xx_fsmc.c(547): error:  #20: identifier "FSMC_Bank2" is undefined
+        FSMC_Bank2->PCR2 |= PCR_PBKEN_SET;
+..\FWLIB\src\stm32f4xx_fsmc.c(551): error:  #20: identifier "FSMC_Bank3" is undefined
+        FSMC_Bank3->PCR3 |= PCR_PBKEN_SET;
+..\FWLIB\src\stm32f4xx_fsmc.c(559): error:  #20: identifier "FSMC_Bank2" is undefined
+        FSMC_Bank2->PCR2 &= PCR_PBKEN_RESET;
+..\FWLIB\src\stm32f4xx_fsmc.c(563): error:  #20: identifier "FSMC_Bank3" is undefined
+        FSMC_Bank3->PCR3 &= PCR_PBKEN_RESET;
+..\FWLIB\src\stm32f4xx_fsmc.c(587): error:  #20: identifier "FSMC_Bank2" is undefined
+        FSMC_Bank2->PCR2 |= PCR_ECCEN_SET;
+..\FWLIB\src\stm32f4xx_fsmc.c(591): error:  #20: identifier "FSMC_Bank3" is undefined
+        FSMC_Bank3->PCR3 |= PCR_ECCEN_SET;
+..\FWLIB\src\stm32f4xx_fsmc.c(599): error:  #20: identifier "FSMC_Bank2" is undefined
+        FSMC_Bank2->PCR2 &= PCR_ECCEN_RESET;
+..\FWLIB\src\stm32f4xx_fsmc.c(603): error:  #20: identifier "FSMC_Bank3" is undefined
+        FSMC_Bank3->PCR3 &= PCR_ECCEN_RESET;
+..\FWLIB\src\stm32f4xx_fsmc.c(623): error:  #20: identifier "FSMC_Bank2" is undefined
+      eccval = FSMC_Bank2->ECCR2;
+..\FWLIB\src\stm32f4xx_fsmc.c(628): error:  #20: identifier "FSMC_Bank3" is undefined
+      eccval = FSMC_Bank3->ECCR3;
+..\FWLIB\src\stm32f4xx_fsmc.c(871): error:  #20: identifier "FSMC_Bank2" is undefined
+        FSMC_Bank2->SR2 |= FSMC_IT;
+..\FWLIB\src\stm32f4xx_fsmc.c(876): error:  #20: identifier "FSMC_Bank3" is undefined
+        FSMC_Bank3->SR3 |= FSMC_IT;
+..\FWLIB\src\stm32f4xx_fsmc.c(890): error:  #20: identifier "FSMC_Bank2" is undefined
+        FSMC_Bank2->SR2 &= (uint32_t)~FSMC_IT;
+..\FWLIB\src\stm32f4xx_fsmc.c(895): error:  #20: identifier "FSMC_Bank3" is undefined
+        FSMC_Bank3->SR3 &= (uint32_t)~FSMC_IT;
+..\FWLIB\src\stm32f4xx_fsmc.c(931): error:  #20: identifier "FSMC_Bank2" is undefined
+      tmpsr = FSMC_Bank2->SR2;
+..\FWLIB\src\stm32f4xx_fsmc.c(935): error:  #20: identifier "FSMC_Bank3" is undefined
+      tmpsr = FSMC_Bank3->SR3;
+..\FWLIB\src\stm32f4xx_fsmc.c(978): error:  #20: identifier "FSMC_Bank2" is undefined
+      FSMC_Bank2->SR2 &= ~FSMC_FLAG; 
+..\FWLIB\src\stm32f4xx_fsmc.c(982): error:  #20: identifier "FSMC_Bank3" is undefined
+      FSMC_Bank3->SR3 &= ~FSMC_FLAG;
+..\FWLIB\src\stm32f4xx_fsmc.c(1016): error:  #20: identifier "FSMC_Bank2" is undefined
+      tmpsr = FSMC_Bank2->SR2;
+..\FWLIB\src\stm32f4xx_fsmc.c(1020): error:  #20: identifier "FSMC_Bank3" is undefined
+      tmpsr = FSMC_Bank3->SR3;
+..\FWLIB\src\stm32f4xx_fsmc.c: 0 warnings, 30 errors
+compiling stm32f4xx_flash.c...
+..\FWLIB\src\stm32f4xx_flash.c(647): error:  #20: identifier "FLASH_CR_MER1" is undefined
+       FLASH->CR |= FLASH_CR_MER1;
+..\FWLIB\src\stm32f4xx_flash.c(714): error:  #20: identifier "FLASH_CR_MER2" is undefined
+       FLASH->CR |= FLASH_CR_MER2;
+..\FWLIB\src\stm32f4xx_flash.c(1280): error:  #20: identifier "FLASH_OPTCR_BFB2" is undefined
+    *(__IO uint8_t *)OPTCR_BYTE0_ADDRESS &= (~FLASH_OPTCR_BFB2);
+..\FWLIB\src\stm32f4xx_flash.c: 0 warnings, 3 errors
+compiling stm32f4xx_fmpi2c.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_dsi.c...
+compiling stm32f4xx_gpio.c...
+..\FWLIB\src\stm32f4xx_gpio.c(123): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(123): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(200): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(200): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(275): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(275): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(321): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(321): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(345): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(345): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(364): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(364): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(388): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(388): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(408): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(408): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(429): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(429): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(451): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(451): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(476): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(476): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(492): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(492): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(578): error:  #20: identifier "GPIOJ" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c(578): error:  #20: identifier "GPIOK" is undefined
+    assert_param(IS_GPIO_ALL_PERIPH(GPIOx));
+..\FWLIB\src\stm32f4xx_gpio.c: 0 warnings, 26 errors
+compiling stm32f4xx_i2c.c...
+..\FWLIB\src\stm32f4xx_i2c.c(343): error:  #136: struct "<unnamed>"  has no field "FLTR"
+      I2Cx->FLTR &= (uint16_t)~((uint16_t)I2C_FLTR_ANOFF);    
+..\FWLIB\src\stm32f4xx_i2c.c(343): error:  #20: identifier "I2C_FLTR_ANOFF" is undefined
+      I2Cx->FLTR &= (uint16_t)~((uint16_t)I2C_FLTR_ANOFF);    
+..\FWLIB\src\stm32f4xx_i2c.c(348): error:  #136: struct "<unnamed>"  has no field "FLTR"
+      I2Cx->FLTR |= I2C_FLTR_ANOFF;
+..\FWLIB\src\stm32f4xx_i2c.c(348): error:  #20: identifier "I2C_FLTR_ANOFF" is undefined
+      I2Cx->FLTR |= I2C_FLTR_ANOFF;
+..\FWLIB\src\stm32f4xx_i2c.c(373): error:  #136: struct "<unnamed>"  has no field "FLTR"
+    tmpreg = I2Cx->FLTR;
+..\FWLIB\src\stm32f4xx_i2c.c(376): error:  #20: identifier "I2C_FLTR_DNF" is undefined
+    tmpreg &= (uint16_t)~((uint16_t)I2C_FLTR_DNF);
+..\FWLIB\src\stm32f4xx_i2c.c(382): error:  #136: struct "<unnamed>"  has no field "FLTR"
+    I2Cx->FLTR = tmpreg;
+..\FWLIB\src\stm32f4xx_i2c.c: 0 warnings, 7 errors
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_iwdg.c...
+compiling stm32f4xx_lptim.c...
+compiling stm32f4xx_ltdc.c...
+..\FWLIB\inc\stm32f4xx_ltdc.h(458): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_LayerInit(LTDC_Layer_TypeDef* LTDC_Layerx, LTDC_Layer_InitTypeDef* LTDC_Layer_InitStruct);
+..\FWLIB\inc\stm32f4xx_ltdc.h(460): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_LayerCmd(LTDC_Layer_TypeDef* LTDC_Layerx, FunctionalState NewState);
+..\FWLIB\inc\stm32f4xx_ltdc.h(464): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_ColorKeyingConfig(LTDC_Layer_TypeDef* LTDC_Layerx, LTDC_ColorKeying_InitTypeDef* LTDC_colorkeying_InitStruct, FunctionalState NewState);
+..\FWLIB\inc\stm32f4xx_ltdc.h(466): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_CLUTCmd(LTDC_Layer_TypeDef* LTDC_Layerx, FunctionalState NewState);
+..\FWLIB\inc\stm32f4xx_ltdc.h(467): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_CLUTInit(LTDC_Layer_TypeDef* LTDC_Layerx, LTDC_CLUT_InitTypeDef* LTDC_CLUT_InitStruct);
+..\FWLIB\inc\stm32f4xx_ltdc.h(469): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_LayerPosition(LTDC_Layer_TypeDef* LTDC_Layerx, uint16_t OffsetX, uint16_t OffsetY);
+..\FWLIB\inc\stm32f4xx_ltdc.h(470): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_LayerAlpha(LTDC_Layer_TypeDef* LTDC_Layerx, uint8_t ConstantAlpha);
+..\FWLIB\inc\stm32f4xx_ltdc.h(471): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_LayerAddress(LTDC_Layer_TypeDef* LTDC_Layerx, uint32_t Address);
+..\FWLIB\inc\stm32f4xx_ltdc.h(472): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_LayerSize(LTDC_Layer_TypeDef* LTDC_Layerx, uint32_t Width, uint32_t Height);
+..\FWLIB\inc\stm32f4xx_ltdc.h(473): error:  #20: identifier "LTDC_Layer_TypeDef" is undefined
+  void LTDC_LayerPixelFormat(LTDC_Layer_TypeDef* LTDC_Layerx, uint32_t PixelFormat);
+..\FWLIB\src\stm32f4xx_ltdc.c(157): error:  #20: identifier "LTDC_GCR_HSPOL" is undefined
+    assert_param(IS_LTDC_HSPOL(LTDC_InitStruct->LTDC_HSPolarity));
+..\FWLIB\src\stm32f4xx_ltdc.c(158): error:  #20: identifier "LTDC_GCR_VSPOL" is undefined
+    assert_param(IS_LTDC_VSPOL(LTDC_InitStruct->LTDC_VSPolarity));
+..\FWLIB\src\stm32f4xx_ltdc.c(159): error:  #20: identifier "LTDC_GCR_DEPOL" is undefined
+    assert_param(IS_LTDC_DEPOL(LTDC_InitStruct->LTDC_DEPolarity));
+..\FWLIB\src\stm32f4xx_ltdc.c(160): error:  #20: identifier "LTDC_GCR_PCPOL" is undefined
+    assert_param(IS_LTDC_PCPOL(LTDC_InitStruct->LTDC_PCPolarity));
+..\FWLIB\src\stm32f4xx_ltdc.c(166): error:  #20: identifier "LTDC" is undefined
+    LTDC->SSCR &= ~(LTDC_SSCR_VSH | LTDC_SSCR_HSW);
+..\FWLIB\src\stm32f4xx_ltdc.c(166): error:  #20: identifier "LTDC_SSCR_VSH" is undefined
+    LTDC->SSCR &= ~(LTDC_SSCR_VSH | LTDC_SSCR_HSW);
+..\FWLIB\src\stm32f4xx_ltdc.c(166): error:  #20: identifier "LTDC_SSCR_HSW" is undefined
+    LTDC->SSCR &= ~(LTDC_SSCR_VSH | LTDC_SSCR_HSW);
+..\FWLIB\src\stm32f4xx_ltdc.c(171): error:  #20: identifier "LTDC_BPCR_AVBP" is undefined
+    LTDC->BPCR &= ~(LTDC_BPCR_AVBP | LTDC_BPCR_AHBP);
+..\FWLIB\src\stm32f4xx_ltdc.c(171): error:  #20: identifier "LTDC_BPCR_AHBP" is undefined
+    LTDC->BPCR &= ~(LTDC_BPCR_AVBP | LTDC_BPCR_AHBP);
+..\FWLIB\src\stm32f4xx_ltdc.c(176): error:  #20: identifier "LTDC_AWCR_AAH" is undefined
+    LTDC->AWCR &= ~(LTDC_AWCR_AAH | LTDC_AWCR_AAW);
+..\FWLIB\src\stm32f4xx_ltdc.c(176): error:  #20: identifier "LTDC_AWCR_AAW" is undefined
+    LTDC->AWCR &= ~(LTDC_AWCR_AAH | LTDC_AWCR_AAW);
+..\FWLIB\src\stm32f4xx_ltdc.c(181): error:  #20: identifier "LTDC_TWCR_TOTALH" is undefined
+    LTDC->TWCR &= ~(LTDC_TWCR_TOTALH | LTDC_TWCR_TOTALW);
+..\FWLIB\src\stm32f4xx_ltdc.c(181): error:  #20: identifier "LTDC_TWCR_TOTALW" is undefined
+    LTDC->TWCR &= ~(LTDC_TWCR_TOTALH | LTDC_TWCR_TOTALW);
+..\FWLIB\src\stm32f4xx_ltdc.c(193): error:  #20: identifier "LTDC_BCCR_BCBLUE" is undefined
+    LTDC->BCCR &= ~(LTDC_BCCR_BCBLUE | LTDC_BCCR_BCGREEN | LTDC_BCCR_BCRED);
+..\FWLIB\src\stm32f4xx_ltdc.c(193): error:  #20: identifier "LTDC_BCCR_BCGREEN" is undefined
+    LTDC->BCCR &= ~(LTDC_BCCR_BCBLUE | LTDC_BCCR_BCGREEN | LTDC_BCCR_BCRED);
+..\FWLIB\src\stm32f4xx_ltdc.c(193): error:  #20: identifier "LTDC_BCCR_BCRED" is undefined
+    LTDC->BCCR &= ~(LTDC_BCCR_BCBLUE | LTDC_BCCR_BCGREEN | LTDC_BCCR_BCRED);
+..\FWLIB\src\stm32f4xx_ltdc.c(239): error:  #20: identifier "LTDC" is undefined
+      LTDC->GCR |= (uint32_t)LTDC_GCR_LTDCEN;
+..\FWLIB\src\stm32f4xx_ltdc.c(239): error:  #20: identifier "LTDC_GCR_LTDCEN" is undefined
+      LTDC->GCR |= (uint32_t)LTDC_GCR_LTDCEN;
+..\FWLIB\src\stm32f4xx_ltdc.c(244): error:  #20: identifier "LTDC" is undefined
+      LTDC->GCR &= ~(uint32_t)LTDC_GCR_LTDCEN;
+..\FWLIB\src\stm32f4xx_ltdc.c(244): error:  #20: identifier "LTDC_GCR_LTDCEN" is undefined
+      LTDC->GCR &= ~(uint32_t)LTDC_GCR_LTDCEN;
+..\FWLIB\src\stm32f4xx_ltdc.c: 0 warnings, 30 errors
+compiling stm32f4xx_pwr.c...
+..\FWLIB\src\stm32f4xx_pwr.c(526): error:  #20: identifier "PWR_CR_UDEN" is undefined
+      PWR->CR |= (uint32_t)PWR_CR_UDEN;
+..\FWLIB\src\stm32f4xx_pwr.c(531): error:  #20: identifier "PWR_CR_UDEN" is undefined
+      PWR->CR &= (uint32_t)(~PWR_CR_UDEN);
+..\FWLIB\src\stm32f4xx_pwr.c(877): error:  #20: identifier "PWR_CR_MRUDS" is undefined
+    assert_param(IS_PWR_REGULATOR_UNDERDRIVE(PWR_Regulator));
+..\FWLIB\src\stm32f4xx_pwr.c(877): error:  #20: identifier "PWR_CR_LPUDS" is undefined
+    assert_param(IS_PWR_REGULATOR_UNDERDRIVE(PWR_Regulator));
+..\FWLIB\src\stm32f4xx_pwr.c(986): error:  #20: identifier "PWR_CSR_ODRDY" is undefined
+    assert_param(IS_PWR_GET_FLAG(PWR_FLAG));
+..\FWLIB\src\stm32f4xx_pwr.c(986): error:  #20: identifier "PWR_CSR_ODSWRDY" is undefined
+    assert_param(IS_PWR_GET_FLAG(PWR_FLAG));
+..\FWLIB\src\stm32f4xx_pwr.c(986): error:  #20: identifier "PWR_CSR_UDSWRDY" is undefined
+    assert_param(IS_PWR_GET_FLAG(PWR_FLAG));
+..\FWLIB\src\stm32f4xx_pwr.c(1012): error:  #20: identifier "PWR_CSR_UDSWRDY" is undefined
+    assert_param(IS_PWR_CLEAR_FLAG(PWR_FLAG));
+..\FWLIB\src\stm32f4xx_pwr.c: 0 warnings, 8 errors
+compiling stm32f4xx_qspi.c...
+compiling stm32f4xx_sai.c...
+..\FWLIB\inc\stm32f4xx_sai.h(589): error:  #20: identifier "SAI_TypeDef" is undefined
+  void SAI_DeInit(SAI_TypeDef* SAIx);
+..\FWLIB\inc\stm32f4xx_sai.h(592): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_Init(SAI_Block_TypeDef* SAI_Block_x, SAI_InitTypeDef* SAI_InitStruct);
+..\FWLIB\inc\stm32f4xx_sai.h(593): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_FrameInit(SAI_Block_TypeDef* SAI_Block_x, SAI_FrameInitTypeDef* SAI_FrameInitStruct);
+..\FWLIB\inc\stm32f4xx_sai.h(594): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_SlotInit(SAI_Block_TypeDef* SAI_Block_x, SAI_SlotInitTypeDef* SAI_SlotInitStruct);
+..\FWLIB\inc\stm32f4xx_sai.h(599): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_Cmd(SAI_Block_TypeDef* SAI_Block_x, FunctionalState NewState);
+..\FWLIB\inc\stm32f4xx_sai.h(600): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_MonoModeConfig(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_Mono_StreoMode);
+..\FWLIB\inc\stm32f4xx_sai.h(601): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_TRIStateConfig(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_TRIState);
+..\FWLIB\inc\stm32f4xx_sai.h(602): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_CompandingModeConfig(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_CompandingMode);
+..\FWLIB\inc\stm32f4xx_sai.h(603): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_MuteModeCmd(SAI_Block_TypeDef* SAI_Block_x, FunctionalState NewState);
+..\FWLIB\inc\stm32f4xx_sai.h(604): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_MuteValueConfig(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_MuteValue);
+..\FWLIB\inc\stm32f4xx_sai.h(605): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_MuteFrameCounterConfig(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_MuteCounter);
+..\FWLIB\inc\stm32f4xx_sai.h(606): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_FlushFIFO(SAI_Block_TypeDef* SAI_Block_x);
+..\FWLIB\inc\stm32f4xx_sai.h(612): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_SendData(SAI_Block_TypeDef* SAI_Block_x, uint32_t Data);
+..\FWLIB\inc\stm32f4xx_sai.h(613): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  uint32_t SAI_ReceiveData(SAI_Block_TypeDef* SAI_Block_x);
+..\FWLIB\inc\stm32f4xx_sai.h(616): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_DMACmd(SAI_Block_TypeDef* SAI_Block_x, FunctionalState NewState);
+..\FWLIB\inc\stm32f4xx_sai.h(619): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_ITConfig(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_IT, FunctionalState NewState);
+..\FWLIB\inc\stm32f4xx_sai.h(620): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  FlagStatus SAI_GetFlagStatus(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_FLAG);
+..\FWLIB\inc\stm32f4xx_sai.h(621): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_ClearFlag(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_FLAG);
+..\FWLIB\inc\stm32f4xx_sai.h(622): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  ITStatus SAI_GetITStatus(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_IT);
+..\FWLIB\inc\stm32f4xx_sai.h(623): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_ClearITPendingBit(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_IT);
+..\FWLIB\inc\stm32f4xx_sai.h(624): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  FunctionalState SAI_GetCmdStatus(SAI_Block_TypeDef* SAI_Block_x);
+..\FWLIB\inc\stm32f4xx_sai.h(625): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  uint32_t SAI_GetFIFOStatus(SAI_Block_TypeDef* SAI_Block_x);
+..\FWLIB\src\stm32f4xx_sai.c(178): error:  #20: identifier "SAI_TypeDef" is undefined
+  void SAI_DeInit(SAI_TypeDef* SAIx)
+..\FWLIB\src\stm32f4xx_sai.c(181): error:  #20: identifier "SAI1" is undefined
+    assert_param(IS_SAI_PERIPH(SAIx));
+..\FWLIB\src\stm32f4xx_sai.c(216): error:  #20: identifier "SAI_Block_TypeDef" is undefined
+  void SAI_Init(SAI_Block_TypeDef* SAI_Block_x, SAI_InitTypeDef* SAI_InitStruct)
+..\FWLIB\src\stm32f4xx_sai.c(221): error:  #20: identifier "SAI1_Block_A" is undefined
+    assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+..\FWLIB\src\stm32f4xx_sai.c(221): error:  #20: identifier "SAI1_Block_B" is undefined
+    assert_param(IS_SAI_BLOCK_PERIPH(SAI_Block_x));
+..\FWLIB\src\stm32f4xx_sai.c(225): error:  #20: identifier "SAI_xCR1_PRTCFG_0" is undefined
+    assert_param(IS_SAI_BLOCK_PROTOCOL(SAI_InitStruct->SAI_Protocol));
+..\FWLIB\src\stm32f4xx_sai.c(225): error:  #20: identifier "SAI_xCR1_PRTCFG_1" is undefined
+    assert_param(IS_SAI_BLOCK_PROTOCOL(SAI_InitStruct->SAI_Protocol));
+..\FWLIB\src\stm32f4xx_sai.c(227): error:  #20: identifier "SAI_xCR1_LSBFIRST" is undefined
+    assert_param(IS_SAI_BLOCK_FIRST_BIT(SAI_InitStruct->SAI_FirstBit));
+..\FWLIB\src\stm32f4xx_sai.c: 0 warnings, 30 errors
+compiling stm32f4xx_rcc.c...
+..\FWLIB\src\stm32f4xx_rcc.c(239): error:  #136: struct "<unnamed>"  has no field "PLLSAICFGR"
+    RCC->PLLSAICFGR = 0x24003000;
+..\FWLIB\src\stm32f4xx_rcc.c(249): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    RCC->DCKCFGR = 0x00000000;
+..\FWLIB\src\stm32f4xx_rcc.c(311): error:  #20: identifier "HSE_STARTUP_TIMEOUT" is undefined
+    } while((startupcounter != HSE_STARTUP_TIMEOUT) && (hsestatus == RESET));
+..\FWLIB\src\stm32f4xx_rcc.c(841): error:  #136: struct "<unnamed>"  has no field "PLLSAICFGR"
+    RCC->PLLSAICFGR = (PLLSAIN << 6) | (PLLSAIQ << 24) | (PLLSAIR << 28);
+..\FWLIB\src\stm32f4xx_rcc.c(1323): error:  #20: identifier "HSI_VALUE" is undefined
+      RCC_Clocks->SYSCLK_Frequency = HSI_VALUE;
+..\FWLIB\src\stm32f4xx_rcc.c(1326): error:  #20: identifier "HSE_VALUE" is undefined
+      RCC_Clocks->SYSCLK_Frequency = HSE_VALUE;
+..\FWLIB\src\stm32f4xx_rcc.c(1734): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+..\FWLIB\src\stm32f4xx_rcc.c(1737): error:  #20: identifier "RCC_DCKCFGR_SAI1ASRC" is undefined
+    tmpreg &= ~RCC_DCKCFGR_SAI1ASRC;
+..\FWLIB\src\stm32f4xx_rcc.c(1743): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+..\FWLIB\src\stm32f4xx_rcc.c(1770): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+..\FWLIB\src\stm32f4xx_rcc.c(1773): error:  #20: identifier "RCC_DCKCFGR_SAI1BSRC" is undefined
+    tmpreg &= ~RCC_DCKCFGR_SAI1BSRC;
+..\FWLIB\src\stm32f4xx_rcc.c(1779): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+..\FWLIB\src\stm32f4xx_rcc.c(1803): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+..\FWLIB\src\stm32f4xx_rcc.c(1806): error:  #20: identifier "RCC_DCKCFGR_PLLI2SDIVQ" is undefined
+    tmpreg &= ~(RCC_DCKCFGR_PLLI2SDIVQ);
+..\FWLIB\src\stm32f4xx_rcc.c(1812): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+..\FWLIB\src\stm32f4xx_rcc.c(1835): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+..\FWLIB\src\stm32f4xx_rcc.c(1838): error:  #20: identifier "RCC_DCKCFGR_PLLSAIDIVQ" is undefined
+    tmpreg &= ~(RCC_DCKCFGR_PLLSAIDIVQ);
+..\FWLIB\src\stm32f4xx_rcc.c(1844): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+..\FWLIB\src\stm32f4xx_rcc.c(1934): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    tmpreg = RCC->DCKCFGR;
+..\FWLIB\src\stm32f4xx_rcc.c(1937): error:  #20: identifier "RCC_DCKCFGR_PLLSAIDIVR" is undefined
+    tmpreg &= ~RCC_DCKCFGR_PLLSAIDIVR;
+..\FWLIB\src\stm32f4xx_rcc.c(1943): error:  #136: struct "<unnamed>"  has no field "DCKCFGR"
+    RCC->DCKCFGR = tmpreg;
+..\FWLIB\src\stm32f4xx_rcc.c(2718): error:  #20: identifier "RCC_BDCR_LSEMOD" is undefined
+      SET_BIT(RCC->BDCR, RCC_BDCR_LSEMOD);
+..\FWLIB\src\stm32f4xx_rcc.c(2722): error:  #20: identifier "RCC_BDCR_LSEMOD" is undefined
+      CLEAR_BIT(RCC->BDCR, RCC_BDCR_LSEMOD);
+..\FWLIB\src\stm32f4xx_rcc.c: 0 warnings, 23 errors
+compiling stm32f4xx_rng.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_spi.c...
+..\FWLIB\src\stm32f4xx_spi.c(220): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(220): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(220): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(282): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(282): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(282): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(428): error:  #20: identifier "HSE_VALUE" is undefined
+        i2sclk = (uint32_t)(((HSE_VALUE / pllm) * plln) / pllr);
+..\FWLIB\src\stm32f4xx_spi.c(432): error:  #20: identifier "HSI_VALUE" is undefined
+        i2sclk = (uint32_t)(((HSI_VALUE / pllm) * plln) / pllr);
+..\FWLIB\src\stm32f4xx_spi.c(554): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(554): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(554): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(606): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(606): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(606): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(626): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(626): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(626): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(652): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(652): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(652): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(676): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(676): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(676): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(707): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(707): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(707): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(818): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(818): error:  #20: identifier "SPI5" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(818): error:  #20: identifier "SPI6" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c(834): error:  #20: identifier "SPI4" is undefined
+    assert_param(IS_SPI_ALL_PERIPH_EXT(SPIx));
+..\FWLIB\src\stm32f4xx_spi.c: 0 warnings, 30 errors
+compiling stm32f4xx_spdifrx.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_rtc.c...
+compiling stm32f4xx_usart.c...
+..\FWLIB\src\stm32f4xx_usart.c(183): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(183): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(183): error:  #20: identifier "UART9" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(183): error:  #20: identifier "UART10" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(247): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(247): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(247): error:  #20: identifier "UART9" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(247): error:  #20: identifier "UART10" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(423): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(423): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(423): error:  #20: identifier "UART9" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(423): error:  #20: identifier "UART10" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(449): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(449): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(449): error:  #20: identifier "UART9" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(449): error:  #20: identifier "UART10" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(470): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(470): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(470): error:  #20: identifier "UART9" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(470): error:  #20: identifier "UART10" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(496): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(496): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(496): error:  #20: identifier "UART9" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(496): error:  #20: identifier "UART10" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(553): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(553): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(553): error:  #20: identifier "UART9" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(553): error:  #20: identifier "UART10" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(569): error:  #20: identifier "UART7" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c(569): error:  #20: identifier "UART8" is undefined
+    assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\FWLIB\src\stm32f4xx_usart.c: 0 warnings, 30 errors
+compiling iwdg.c...
+..\driver\iwdg.c(15): error:  #20: identifier "IWDG_WriteAccess_Enable" is undefined
+  	IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable);
+..\driver\iwdg.c: 0 warnings, 1 error
+compiling stm32f4xx_wwdg.c...
+compiling exti.c...
+compiling stm32f4xx_tim.c...
+compiling pwm.c...
+compiling stm324xg_eval_sdio_sd.c...
+..\driver\stm324xg_eval_sdio_sd.c(354): error:  #20: identifier "SDIO_InitTypeDef" is undefined
+  SDIO_InitTypeDef SDIO_InitStructure;
+..\driver\stm324xg_eval_sdio_sd.c(355): error:  #20: identifier "SDIO_CmdInitTypeDef" is undefined
+  SDIO_CmdInitTypeDef SDIO_CmdInitStructure;
+..\driver\stm324xg_eval_sdio_sd.c(356): error:  #20: identifier "SDIO_DataInitTypeDef" is undefined
+  SDIO_DataInitTypeDef SDIO_DataInitStructure;
+..\driver\stm324xg_eval_sdio_sd.c(405): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\driver\stm324xg_eval_sdio_sd.c(407): error:  #20: identifier "NVIC_PriorityGroup_1" is undefined
+  	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1);
+..\driver\stm324xg_eval_sdio_sd.c(444): error:  #20: identifier "SDIO_ClockEdge_Rising" is undefined
+    SDIO_InitStructure.SDIO_ClockEdge = SDIO_ClockEdge_Rising;
+..\driver\stm324xg_eval_sdio_sd.c(445): error:  #20: identifier "SDIO_ClockBypass_Disable" is undefined
+    SDIO_InitStructure.SDIO_ClockBypass = SDIO_ClockBypass_Disable;
+..\driver\stm324xg_eval_sdio_sd.c(446): error:  #20: identifier "SDIO_ClockPowerSave_Disable" is undefined
+    SDIO_InitStructure.SDIO_ClockPowerSave = SDIO_ClockPowerSave_Disable;
+..\driver\stm324xg_eval_sdio_sd.c(447): error:  #20: identifier "SDIO_BusWide_1b" is undefined
+    SDIO_InitStructure.SDIO_BusWide = SDIO_BusWide_1b;
+..\driver\stm324xg_eval_sdio_sd.c(448): error:  #20: identifier "SDIO_HardwareFlowControl_Disable" is undefined
+    SDIO_InitStructure.SDIO_HardwareFlowControl = SDIO_HardwareFlowControl_Disable;
+..\driver\stm324xg_eval_sdio_sd.c(462): error:  #20: identifier "SDIO_BusWide_4b" is undefined
+      errorstatus = SD_EnableWideBusOperation(SDIO_BusWide_4b);
+..\driver\stm324xg_eval_sdio_sd.c(557): error:  #20: identifier "SDIO_ClockEdge_Rising" is undefined
+    SDIO_InitStructure.SDIO_ClockEdge = SDIO_ClockEdge_Rising;
+..\driver\stm324xg_eval_sdio_sd.c(558): error:  #20: identifier "SDIO_ClockBypass_Disable" is undefined
+    SDIO_InitStructure.SDIO_ClockBypass = SDIO_ClockBypass_Disable;
+..\driver\stm324xg_eval_sdio_sd.c(559): error:  #20: identifier "SDIO_ClockPowerSave_Disable" is undefined
+    SDIO_InitStructure.SDIO_ClockPowerSave = SDIO_ClockPowerSave_Disable;
+..\driver\stm324xg_eval_sdio_sd.c(560): error:  #20: identifier "SDIO_BusWide_1b" is undefined
+    SDIO_InitStructure.SDIO_BusWide = SDIO_BusWide_1b;
+..\driver\stm324xg_eval_sdio_sd.c(561): error:  #20: identifier "SDIO_HardwareFlowControl_Disable" is undefined
+    SDIO_InitStructure.SDIO_HardwareFlowControl = SDIO_HardwareFlowControl_Disable;
+..\driver\stm324xg_eval_sdio_sd.c(565): error:  #20: identifier "SDIO_PowerState_ON" is undefined
+    SDIO_SetPowerState(SDIO_PowerState_ON);
+..\driver\stm324xg_eval_sdio_sd.c(574): error:  #20: identifier "SDIO_Response_No" is undefined
+    SDIO_CmdInitStructure.SDIO_Response = SDIO_Response_No;
+..\driver\stm324xg_eval_sdio_sd.c(575): error:  #20: identifier "SDIO_Wait_No" is undefined
+    SDIO_CmdInitStructure.SDIO_Wait = SDIO_Wait_No;
+..\driver\stm324xg_eval_sdio_sd.c(576): error:  #20: identifier "SDIO_CPSM_Enable" is undefined
+    SDIO_CmdInitStructure.SDIO_CPSM = SDIO_CPSM_Enable;
+..\driver\stm324xg_eval_sdio_sd.c(595): error:  #20: identifier "SDIO_Response_Short" is undefined
+    SDIO_CmdInitStructure.SDIO_Response = SDIO_Response_Short;
+..\driver\stm324xg_eval_sdio_sd.c(664): error:  #20: identifier "SDIO_RESP1" is undefined
+        response = SDIO_GetResponse(SDIO_RESP1);
+..\driver\stm324xg_eval_sdio_sd.c(694): error:  #20: identifier "SDIO_PowerState_OFF" is undefined
+    SDIO_SetPowerState(SDIO_PowerState_OFF);
+..\driver\stm324xg_eval_sdio_sd.c(710): error:  #20: identifier "SDIO_PowerState_OFF" is undefined
+    if (SDIO_GetPowerState() == SDIO_PowerState_OFF)
+..\driver\stm324xg_eval_sdio_sd.c(721): error:  #20: identifier "SDIO_Response_Long" is undefined
+      SDIO_CmdInitStructure.SDIO_Response = SDIO_Response_Long;
+..\driver\stm324xg_eval_sdio_sd.c(722): error:  #20: identifier "SDIO_Wait_No" is undefined
+      SDIO_CmdInitStructure.SDIO_Wait = SDIO_Wait_No;
+..\driver\stm324xg_eval_sdio_sd.c(723): error:  #20: identifier "SDIO_CPSM_Enable" is undefined
+      SDIO_CmdInitStructure.SDIO_CPSM = SDIO_CPSM_Enable;
+..\driver\stm324xg_eval_sdio_sd.c(733): error:  #20: identifier "SDIO_RESP1" is undefined
+      CID_Tab[0] = SDIO_GetResponse(SDIO_RESP1);
+..\driver\stm324xg_eval_sdio_sd.c(734): error:  #20: identifier "SDIO_RESP2" is undefined
+      CID_Tab[1] = SDIO_GetResponse(SDIO_RESP2);
+..\driver\stm324xg_eval_sdio_sd.c(735): error:  #20: identifier "SDIO_RESP3" is undefined
+      CID_Tab[2] = SDIO_GetResponse(SDIO_RESP3);
+..\driver\stm324xg_eval_sdio_sd.c: 0 warnings, 30 errors
+compiling usart.c...
+..\driver\usart.c(70): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\driver\usart.c(259): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\driver\usart.c: 0 warnings, 2 errors
+compiling stm324xg_eval.c...
+..\driver\stm324xg_eval.c(58): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+  NVIC_InitTypeDef   NVIC_InitStructure;
+..\driver\stm324xg_eval.c(67): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+    GPIO_InitTypeDef  GPIO_InitStructure;
+..\driver\stm324xg_eval.c(79): error:  #20: identifier "RCC_APB2Periph_SDIO" is undefined
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_SDIO, DISABLE);
+..\driver\stm324xg_eval.c(81): error:  #20: identifier "GPIO_PinSource8" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource8, GPIO_AF_MCO);
+..\driver\stm324xg_eval.c(81): error:  #20: identifier "GPIO_AF_MCO" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource8, GPIO_AF_MCO);
+..\driver\stm324xg_eval.c(82): error:  #20: identifier "GPIO_PinSource9" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource9, GPIO_AF_MCO);
+..\driver\stm324xg_eval.c(83): error:  #20: identifier "GPIO_PinSource10" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource10, GPIO_AF_MCO);
+..\driver\stm324xg_eval.c(84): error:  #20: identifier "GPIO_PinSource11" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource11, GPIO_AF_MCO);
+..\driver\stm324xg_eval.c(85): error:  #20: identifier "GPIO_PinSource12" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource12, GPIO_AF_MCO);
+..\driver\stm324xg_eval.c(86): error:  #20: identifier "GPIO_PinSource2" is undefined
+    GPIO_PinAFConfig(GPIOD, GPIO_PinSource2, GPIO_AF_MCO);
+..\driver\stm324xg_eval.c(89): error:  #20: identifier "GPIO_Pin_8" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\driver\stm324xg_eval.c(89): error:  #20: identifier "GPIO_Pin_9" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\driver\stm324xg_eval.c(89): error:  #20: identifier "GPIO_Pin_10" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\driver\stm324xg_eval.c(89): error:  #20: identifier "GPIO_Pin_11" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\driver\stm324xg_eval.c(90): error:  #20: identifier "GPIO_Mode_IN" is undefined
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+..\driver\stm324xg_eval.c(91): error:  #20: identifier "GPIO_PuPd_NOPULL" is undefined
+    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+..\driver\stm324xg_eval.c(95): error:  #20: identifier "GPIO_Pin_2" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
+..\driver\stm324xg_eval.c(99): error:  #20: identifier "GPIO_Pin_12" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;
+..\driver\stm324xg_eval.c(111): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+    GPIO_InitTypeDef  GPIO_InitStructure;
+..\driver\stm324xg_eval.c(114): error:  #20: identifier "RCC_AHB1Periph_GPIOC" is undefined
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC | RCC_AHB1Periph_GPIOD, ENABLE);
+..\driver\stm324xg_eval.c(114): error:  #20: identifier "RCC_AHB1Periph_GPIOD" is undefined
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOC | RCC_AHB1Periph_GPIOD, ENABLE);
+..\driver\stm324xg_eval.c(116): error:  #20: identifier "GPIO_PinSource8" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource8, GPIO_AF_SDIO);
+..\driver\stm324xg_eval.c(116): error:  #20: identifier "GPIO_AF_SDIO" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource8, GPIO_AF_SDIO);
+..\driver\stm324xg_eval.c(117): error:  #20: identifier "GPIO_PinSource9" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource9, GPIO_AF_SDIO);
+..\driver\stm324xg_eval.c(118): error:  #20: identifier "GPIO_PinSource10" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource10, GPIO_AF_SDIO);
+..\driver\stm324xg_eval.c(119): error:  #20: identifier "GPIO_PinSource11" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource11, GPIO_AF_SDIO);
+..\driver\stm324xg_eval.c(120): error:  #20: identifier "GPIO_PinSource12" is undefined
+    GPIO_PinAFConfig(GPIOC, GPIO_PinSource12, GPIO_AF_SDIO);
+..\driver\stm324xg_eval.c(121): error:  #20: identifier "GPIO_PinSource2" is undefined
+    GPIO_PinAFConfig(GPIOD, GPIO_PinSource2, GPIO_AF_SDIO);
+..\driver\stm324xg_eval.c(124): error:  #20: identifier "GPIO_Pin_8" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\driver\stm324xg_eval.c(124): error:  #20: identifier "GPIO_Pin_9" is undefined
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\driver\stm324xg_eval.c: 0 warnings, 30 errors
+compiling fifo.c...
+compiling fsmc.c...
+compiling spi.c...
+compiling i2c.c...
 compiling dma.c...
-linking...
-Program Size: Code=5968 RO-data=424 RW-data=156 ZI-data=1028  
-".\Objects\test.axf" - 0 Error(s), 0 Warning(s).
+compiling LED.c...
+compiling bsp_key.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\HARDWARE\bsp_key.c(23): error:  #20: identifier "RCC_AHB1Periph_GPIOG" is undefined
+      RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG | RCC_AHB1Periph_GPIOH, ENABLE);
+..\HARDWARE\bsp_key.c(23): error:  #20: identifier "RCC_AHB1Periph_GPIOH" is undefined
+      RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOG | RCC_AHB1Periph_GPIOH, ENABLE);
+..\HARDWARE\bsp_key.c(25): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+      GPIO_InitTypeDef GPIO_InitStructure;
+..\HARDWARE\bsp_key.c(28): error:  #20: identifier "GPIO_Mode_IN" is undefined
+      GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN;
+..\HARDWARE\bsp_key.c(29): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+      GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+..\HARDWARE\bsp_key.c(30): error:  #20: identifier "GPIO_Speed_100MHz" is undefined
+      GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+..\HARDWARE\bsp_key.c(31): error:  #20: identifier "GPIO_Pin_0" is undefined
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
+..\HARDWARE\bsp_key.c(31): error:  #20: identifier "GPIO_Pin_1" is undefined
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1;
+..\HARDWARE\bsp_key.c(33): error:  #20: identifier "GPIO_Pin_6" is undefined
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;
+..\HARDWARE\bsp_key.c(33): error:  #20: identifier "GPIO_Pin_7" is undefined
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;
+..\HARDWARE\bsp_key.c(37): error:  #20: identifier "GPIO_Mode_OUT" is undefined
+      GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+..\HARDWARE\bsp_key.c(38): error:  #20: identifier "GPIO_OType_PP" is undefined
+      GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+..\HARDWARE\bsp_key.c(40): error:  #20: identifier "GPIO_Pin_8" is undefined
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\HARDWARE\bsp_key.c(40): error:  #20: identifier "GPIO_Pin_9" is undefined
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\HARDWARE\bsp_key.c(40): error:  #20: identifier "GPIO_Pin_10" is undefined
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\HARDWARE\bsp_key.c(40): error:  #20: identifier "GPIO_Pin_11" is undefined
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+..\HARDWARE\bsp_key.c(130): error:  #20: identifier "GPIO_Pin_5" is undefined
+  								LED_RED_OFF;
+..\HARDWARE\bsp_key.c: 0 warnings, 18 errors
+compiling DAC8550.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\SYSTEM\delay.h(5): error:  #20: identifier "u8" is undefined
+  void delay_init(u8 SYSCLK);
+..\SYSTEM\delay.h(6): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms);
+..\SYSTEM\delay.h(7): error:  #20: identifier "u32" is undefined
+  void delay_us(u32 nus);
+..\HARDWARE\DAC8550.c(85): error:  #20: identifier "u8" is undefined
+    u8 i;  
+..\HARDWARE\DAC8550.c: 0 warnings, 5 errors
+compiling delay.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\SYSTEM\delay.h(5): error:  #20: identifier "u8" is undefined
+  void delay_init(u8 SYSCLK);
+..\SYSTEM\delay.h(6): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms);
+..\SYSTEM\delay.h(7): error:  #20: identifier "u32" is undefined
+  void delay_us(u32 nus);
+..\SYSTEM\delay.c(10): error:  #20: identifier "u8" is undefined
+  static u8  fac_us=0;							//us延时倍乘数			   
+..\SYSTEM\delay.c(11): error:  #20: identifier "u16" is undefined
+  static u16 fac_ms=0;							//ms延时倍乘数,在os下,代表每个节拍的ms数
+..\SYSTEM\delay.c(90): error:  #20: identifier "u8" is undefined
+  void delay_init(u8 SYSCLK)
+..\SYSTEM\delay.c(95): error:  #20: identifier "SysTick_CLKSource_HCLK_Div8" is undefined
+   	SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8); 
+..\SYSTEM\delay.c(106): error:  #20: identifier "u16" is undefined
+  	fac_ms=(u16)fac_us*1000;				//非OS下,代表每个ms需要的systick时钟数   
+..\SYSTEM\delay.c(106): error:  #65: expected a ";"
+  	fac_ms=(u16)fac_us*1000;				//非OS下,代表每个ms需要的systick时钟数   
+..\SYSTEM\delay.c(154): error:  #20: identifier "u32" is undefined
+  void delay_us(u32 nus)
+..\SYSTEM\delay.c(156): error:  #20: identifier "u32" is undefined
+  	u32 temp;	    	 
+..\SYSTEM\delay.c(173): error:  #20: identifier "u16" is undefined
+  void delay_xms(u16 nms)
+..\SYSTEM\delay.c(175): error:  #20: identifier "u32" is undefined
+  	u32 temp;		   
+..\SYSTEM\delay.c(176): error:  #20: identifier "u32" is undefined
+  	SysTick->LOAD=(u32)nms*fac_ms;			//时间加载(SysTick->LOAD为24bit)
+..\SYSTEM\delay.c(176): error:  #65: expected a ";"
+  	SysTick->LOAD=(u32)nms*fac_ms;			//时间加载(SysTick->LOAD为24bit)
+..\SYSTEM\delay.c(188): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms)
+..\SYSTEM\delay.c(190): error:  #20: identifier "u8" is undefined
+  	u8 repeat=nms/540;						//这里用540,是考虑到某些客户可能超频使用,
+..\SYSTEM\delay.c(192): error:  #20: identifier "u16" is undefined
+  	u16 remain=nms%540;
+..\SYSTEM\delay.c: 0 warnings, 19 errors
+compiling ff.c...
+compiling ads8361.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\SYSTEM\delay.h(5): error:  #20: identifier "u8" is undefined
+  void delay_init(u8 SYSCLK);
+..\SYSTEM\delay.h(6): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms);
+..\SYSTEM\delay.h(7): error:  #20: identifier "u32" is undefined
+  void delay_us(u32 nus);
+..\HARDWARE\ads8361.c(212): error:  #20: identifier "u8" is undefined
+    u8 i = 0;	
+..\HARDWARE\ads8361.c(257): error:  #20: identifier "u8" is undefined
+  	u8 i = 0;	
+..\HARDWARE\ads8361.c: 0 warnings, 6 errors
+compiling sys.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\SYSTEM\sys.c(25): error:  #20: identifier "u32" is undefined
+  __asm void MSR_MSP(u32 addr) 
+..\SYSTEM\sys.c: 0 warnings, 2 errors
+compiling lcd_init.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\HARDWARE\LCD1\lcd_init.h(44): error:  #20: identifier "u8" is undefined
+  void LCD_Writ_Bus(u8 dat);//模拟SPI时序
+..\HARDWARE\LCD1\lcd_init.h(45): error:  #20: identifier "u8" is undefined
+  void LCD_WR_DATA8(u8 dat);//写入一个字节
+..\HARDWARE\LCD1\lcd_init.h(46): error:  #20: identifier "u16" is undefined
+  void LCD_WR_DATA(u16 dat);//写入两个字节
+..\HARDWARE\LCD1\lcd_init.h(47): error:  #20: identifier "u8" is undefined
+  void LCD_WR_REG(u8 dat);//写入一个指令
+..\HARDWARE\LCD1\lcd_init.h(48): error:  #20: identifier "u16" is undefined
+  void LCD_Address_Set(u16 x1,u16 y1,u16 x2,u16 y2);//设置坐标函数
+..\HARDWARE\LCD1\lcd_init.h(48): error:  #20: identifier "u16" is undefined
+  void LCD_Address_Set(u16 x1,u16 y1,u16 x2,u16 y2);//设置坐标函数
+..\HARDWARE\LCD1\lcd_init.h(48): error:  #20: identifier "u16" is undefined
+  void LCD_Address_Set(u16 x1,u16 y1,u16 x2,u16 y2);//设置坐标函数
+..\HARDWARE\LCD1\lcd_init.h(48): error:  #20: identifier "u16" is undefined
+  void LCD_Address_Set(u16 x1,u16 y1,u16 x2,u16 y2);//设置坐标函数
+..\SYSTEM\delay.h(5): error:  #20: identifier "u8" is undefined
+  void delay_init(u8 SYSCLK);
+..\SYSTEM\delay.h(6): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms);
+..\SYSTEM\delay.h(7): error:  #20: identifier "u32" is undefined
+  void delay_us(u32 nus);
+..\HARDWARE\LCD1\lcd_init.c(7): error:  #20: identifier "RCC_AHB1Periph_GPIOF" is undefined
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOF|RCC_AHB1Periph_GPIOB, ENABLE);
+..\HARDWARE\LCD1\lcd_init.c(7): error:  #20: identifier "RCC_AHB1Periph_GPIOB" is undefined
+  	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOF|RCC_AHB1Periph_GPIOB, ENABLE);
+..\HARDWARE\LCD1\lcd_init.c(9): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+  	GPIO_InitTypeDef  GPIO_InitStructure;
+..\HARDWARE\LCD1\lcd_init.c(10): error:  #20: identifier "GPIO_Mode_OUT" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//普通输出模式
+..\HARDWARE\LCD1\lcd_init.c(11): error:  #20: identifier "GPIO_OType_PP" is undefined
+  	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
+..\HARDWARE\LCD1\lcd_init.c(12): error:  #20: identifier "GPIO_PuPd_UP" is undefined
+  	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
+..\HARDWARE\LCD1\lcd_init.c(14): error:  #20: identifier "GPIO_Pin_11" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15;
+..\HARDWARE\LCD1\lcd_init.c(14): error:  #20: identifier "GPIO_Pin_12" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15;
+..\HARDWARE\LCD1\lcd_init.c(14): error:  #20: identifier "GPIO_Pin_13" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15;
+..\HARDWARE\LCD1\lcd_init.c(14): error:  #20: identifier "GPIO_Pin_14" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15;
+..\HARDWARE\LCD1\lcd_init.c(14): error:  #20: identifier "GPIO_Pin_15" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15;
+..\HARDWARE\LCD1\lcd_init.c(18): error:  #20: identifier "GPIO_Pin_2" is undefined
+  	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
+..\HARDWARE\LCD1\lcd_init.c(29): error:  #20: identifier "u8" is undefined
+  void LCD_Writ_Bus(u8 dat) 
+..\HARDWARE\LCD1\lcd_init.c(31): error:  #20: identifier "u8" is undefined
+  	u8 i;
+..\HARDWARE\LCD1\lcd_init.c(32): error:  #20: identifier "GPIO_Pin_15" is undefined
+  	LCD_CS_Clr();
+..\HARDWARE\LCD1\lcd_init.c(35): error:  #20: identifier "GPIO_Pin_11" is undefined
+  		LCD_SCLK_Clr();
+..\HARDWARE\LCD1\lcd_init.c(38): error:  #20: identifier "GPIO_Pin_12" is undefined
+  		   LCD_MOSI_Set();
+..\HARDWARE\LCD1\lcd_init.c(42): error:  #20: identifier "GPIO_Pin_12" is undefined
+  		   LCD_MOSI_Clr();
+..\HARDWARE\LCD1\lcd_init.c: 0 warnings, 30 errors
+compiling lcd1.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\HARDWARE\LCD1\lcd1.h(6): error:  #20: identifier "u16" is undefined
+  void LCD_Fill(u16 xsta,u16 ysta,u16 xend,u16 yend,u16 color);//指定区域填充颜色
+..\HARDWARE\LCD1\lcd1.h(6): error:  #20: identifier "u16" is undefined
+  void LCD_Fill(u16 xsta,u16 ysta,u16 xend,u16 yend,u16 color);//指定区域填充颜色
+..\HARDWARE\LCD1\lcd1.h(6): error:  #20: identifier "u16" is undefined
+  void LCD_Fill(u16 xsta,u16 ysta,u16 xend,u16 yend,u16 color);//指定区域填充颜色
+..\HARDWARE\LCD1\lcd1.h(6): error:  #20: identifier "u16" is undefined
+  void LCD_Fill(u16 xsta,u16 ysta,u16 xend,u16 yend,u16 color);//指定区域填充颜色
+..\HARDWARE\LCD1\lcd1.h(6): error:  #20: identifier "u16" is undefined
+  void LCD_Fill(u16 xsta,u16 ysta,u16 xend,u16 yend,u16 color);//指定区域填充颜色
+..\HARDWARE\LCD1\lcd1.h(7): error:  #20: identifier "u16" is undefined
+  void LCD_DrawPoint(u16 x,u16 y,u16 color);//在指定位置画一个点
+..\HARDWARE\LCD1\lcd1.h(7): error:  #20: identifier "u16" is undefined
+  void LCD_DrawPoint(u16 x,u16 y,u16 color);//在指定位置画一个点
+..\HARDWARE\LCD1\lcd1.h(7): error:  #20: identifier "u16" is undefined
+  void LCD_DrawPoint(u16 x,u16 y,u16 color);//在指定位置画一个点
+..\HARDWARE\LCD1\lcd1.h(8): error:  #20: identifier "u16" is undefined
+  void LCD_DrawLine(u16 x1,u16 y1,u16 x2,u16 y2,u16 color);//在指定位置画一条线
+..\HARDWARE\LCD1\lcd1.h(8): error:  #20: identifier "u16" is undefined
+  void LCD_DrawLine(u16 x1,u16 y1,u16 x2,u16 y2,u16 color);//在指定位置画一条线
+..\HARDWARE\LCD1\lcd1.h(8): error:  #20: identifier "u16" is undefined
+  void LCD_DrawLine(u16 x1,u16 y1,u16 x2,u16 y2,u16 color);//在指定位置画一条线
+..\HARDWARE\LCD1\lcd1.h(8): error:  #20: identifier "u16" is undefined
+  void LCD_DrawLine(u16 x1,u16 y1,u16 x2,u16 y2,u16 color);//在指定位置画一条线
+..\HARDWARE\LCD1\lcd1.h(8): error:  #20: identifier "u16" is undefined
+  void LCD_DrawLine(u16 x1,u16 y1,u16 x2,u16 y2,u16 color);//在指定位置画一条线
+..\HARDWARE\LCD1\lcd1.h(9): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2,u16 color);//在指定位置画一个矩形
+..\HARDWARE\LCD1\lcd1.h(9): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2,u16 color);//在指定位置画一个矩形
+..\HARDWARE\LCD1\lcd1.h(9): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2,u16 color);//在指定位置画一个矩形
+..\HARDWARE\LCD1\lcd1.h(9): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2,u16 color);//在指定位置画一个矩形
+..\HARDWARE\LCD1\lcd1.h(9): error:  #20: identifier "u16" is undefined
+  void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2,u16 color);//在指定位置画一个矩形
+..\HARDWARE\LCD1\lcd1.h(10): error:  #20: identifier "u16" is undefined
+  void Draw1_Circle(u16 x0,u16 y0,u8 r,u16 color);//在指定位置画一个圆
+..\HARDWARE\LCD1\lcd1.h(10): error:  #20: identifier "u16" is undefined
+  void Draw1_Circle(u16 x0,u16 y0,u8 r,u16 color);//在指定位置画一个圆
+..\HARDWARE\LCD1\lcd1.h(10): error:  #20: identifier "u8" is undefined
+  void Draw1_Circle(u16 x0,u16 y0,u8 r,u16 color);//在指定位置画一个圆
+..\HARDWARE\LCD1\lcd1.h(10): error:  #20: identifier "u16" is undefined
+  void Draw1_Circle(u16 x0,u16 y0,u8 r,u16 color);//在指定位置画一个圆
+..\HARDWARE\LCD1\lcd1.h(12): error:  #20: identifier "u16" is undefined
+  void LCD_ShowChinese(u16 x,u16 y,u8 *s,u16 fc,u16 bc,u8 sizey,u8 mode);//显示汉字串
+..\HARDWARE\LCD1\lcd1.h(12): error:  #20: identifier "u16" is undefined
+  void LCD_ShowChinese(u16 x,u16 y,u8 *s,u16 fc,u16 bc,u8 sizey,u8 mode);//显示汉字串
+..\HARDWARE\LCD1\lcd1.h(12): error:  #20: identifier "u8" is undefined
+  void LCD_ShowChinese(u16 x,u16 y,u8 *s,u16 fc,u16 bc,u8 sizey,u8 mode);//显示汉字串
+..\HARDWARE\LCD1\lcd1.h(12): error:  #20: identifier "u16" is undefined
+  void LCD_ShowChinese(u16 x,u16 y,u8 *s,u16 fc,u16 bc,u8 sizey,u8 mode);//显示汉字串
+..\HARDWARE\LCD1\lcd1.h(12): error:  #20: identifier "u16" is undefined
+  void LCD_ShowChinese(u16 x,u16 y,u8 *s,u16 fc,u16 bc,u8 sizey,u8 mode);//显示汉字串
+..\HARDWARE\LCD1\lcd1.h(12): error:  #20: identifier "u8" is undefined
+  void LCD_ShowChinese(u16 x,u16 y,u8 *s,u16 fc,u16 bc,u8 sizey,u8 mode);//显示汉字串
+..\HARDWARE\LCD1\lcd1.h(12): error:  #20: identifier "u8" is undefined
+  void LCD_ShowChinese(u16 x,u16 y,u8 *s,u16 fc,u16 bc,u8 sizey,u8 mode);//显示汉字串
+..\HARDWARE\LCD1\lcd1.c: 0 warnings, 30 errors
+compiling Timer.c...
+..\SYSTEM\Timer.c(7): error:  #20: identifier "RCC_APB2Periph_TIM10" is undefined
+      RCC_APB2PeriphClockCmd(RCC_APB2Periph_TIM10,ENABLE);
+..\SYSTEM\Timer.c(9): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+      TIM_TimeBaseInitTypeDef TIM_InitStructure;
+..\SYSTEM\Timer.c(10): error:  #20: identifier "TIM_CKD_DIV4" is undefined
+      TIM_InitStructure.TIM_ClockDivision = TIM_CKD_DIV4;
+..\SYSTEM\Timer.c(11): error:  #20: identifier "TIM_CounterMode_Up" is undefined
+      TIM_InitStructure.TIM_CounterMode = TIM_CounterMode_Up;
+..\SYSTEM\Timer.c(17): error:  #20: identifier "TIM_IT_Update" is undefined
+      TIM_ITConfig(TIM10,TIM_IT_Update,ENABLE);
+..\SYSTEM\Timer.c(23): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+      NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\Timer.c(64): error:  #20: identifier "TIM_IT_Update" is undefined
+  	if(TIM_GetITStatus(TIM10,TIM_IT_Update) == SET) {   
+..\SYSTEM\Timer.c: 0 warnings, 7 errors
+compiling rtc.c...
+compiling timer3.c...
+..\SYSTEM\timer3.c(36): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\SYSTEM\timer3.c: 0 warnings, 1 error
+compiling systick.c...
+compiling diskio.c...
+compiling SD.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\SYSTEM\delay.h(5): error:  #20: identifier "u8" is undefined
+  void delay_init(u8 SYSCLK);
+..\SYSTEM\delay.h(6): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms);
+..\SYSTEM\delay.h(7): error:  #20: identifier "u32" is undefined
+  void delay_us(u32 nus);
+..\fatfs\SD.c(17): error:  #20: identifier "GPIO_Pin_5" is undefined
+  			LED_RED_ON;
+..\fatfs\SD.c(30): error:  #20: identifier "GPIO_Pin_6" is undefined
+              LED_GREEN_ON;
+..\fatfs\SD.c(33): error:  #20: identifier "GPIO_Pin_5" is undefined
+              LED_RED_ON;
+..\fatfs\SD.c(43): error:  #20: identifier "GPIO_Pin_7" is undefined
+              LED_BLUE_ON;
+..\fatfs\SD.c(45): error:  #20: identifier "GPIO_Pin_6" is undefined
+              LED_GREEN_OFF;
+..\fatfs\SD.c(46): error:  #20: identifier "GPIO_Pin_5" is undefined
+              LED_RED_ON;
+..\fatfs\SD.c(56): error:  #20: identifier "GPIO_Pin_6" is undefined
+              LED_GREEN_ON;
+..\fatfs\SD.c(68): error:  #20: identifier "GPIO_Pin_5" is undefined
+          LED_RED_ON;
+..\fatfs\SD.c(76): error:  #20: identifier "GPIO_Pin_7" is undefined
+              LED_BLUE_ON;
+..\fatfs\SD.c(88): error:  #20: identifier "GPIO_Pin_5" is undefined
+              LED_RED_ON;
+..\fatfs\SD.c: 0 warnings, 14 errors
+compiling update.c...
+..\SYSTEM\sys.h(72): error:  #20: identifier "u32" is undefined
+  void MSR_MSP(u32 addr);	//设置堆栈地址 
+..\SYSTEM\delay.h(5): error:  #20: identifier "u8" is undefined
+  void delay_init(u8 SYSCLK);
+..\SYSTEM\delay.h(6): error:  #20: identifier "u16" is undefined
+  void delay_ms(u16 nms);
+..\SYSTEM\delay.h(7): error:  #20: identifier "u32" is undefined
+  void delay_us(u32 nus);
+..\fatfs\update.c: 0 warnings, 4 errors
+".\Objects\test.axf" - 540 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -44,7 +1224,8 @@ Package Vendor: Keil
   C:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Target not created.
+Build Time Elapsed:  00:00:14
 </pre>
 </body>
 </html>

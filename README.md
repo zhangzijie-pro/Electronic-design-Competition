@@ -2,6 +2,8 @@
 code of stm32f407IGT6
 该仓库为stm32f407固件库内容
 
+编码以GB2312打开
+
 ## 文件格式
 CORE FWLIB属于库文件
 

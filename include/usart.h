@@ -20,7 +20,7 @@
 //--------------------------- Define ---------------------------//
 #define UART_BUFFER_SIZE 100
 
-//------------------------- Data struct-------------------------//
+//------------------------- Data struct ------------------------//
 typedef struct{
 
 	char receive_buffer[UART_BUFFER_SIZE];
@@ -38,6 +38,7 @@ typedef struct{
 
 //----------------------- Extern function ----------------------//
 extern UART_T usart4;
+extern UART_T usart2;
 
 //----------------------- Extern variable ----------------------//
 #endif // __uart_h__
