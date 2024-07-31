@@ -759,26 +759,6 @@
             </File>
           </Files>
         </Group>
-        <Group>
-          <GroupName>fafts</GroupName>
-          <Files>
-            <File>
-              <FileName>diskio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\fatfs\diskio.c</FilePath>
-            </File>
-            <File>
-              <FileName>ff.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\fatfs\ff.c</FilePath>
-            </File>
-            <File>
-              <FileName>save_v.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\fatfs\save_v.c</FilePath>
-            </File>
-          </Files>
-        </Group>
       </Groups>
     </Target>
   </Targets>
