@@ -748,11 +748,6 @@
               <FilePath>..\DSP\arm_cortexM4lf_math.lib</FilePath>
             </File>
             <File>
-              <FileName>fir.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\DSP\fir.c</FilePath>
-            </File>
-            <File>
               <FileName>rfft.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\DSP\rfft.c</FilePath>

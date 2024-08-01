@@ -1,10 +1,17 @@
-#ifndef __DAC_H__
-#define __DAC_H__
-#define OUT_LENGTH (1024)
-#include "stm32f4xx.h"
+#ifndef __dac_h__
+#define __dac_h__
 
-void DAC_Init_Voice(void);
-extern float Dac_output[OUT_LENGTH];
-extern uint8_t dac_start_flag;
+//----------------------- Include files ------------------------//
 
-#endif
+//--------------------------- Define ---------------------------//				
+						
+//-------------------------- Typedef ---------------------------//
+typedef struct{
+	int (* initialize)(void);
+	void(* set_voltage)(double);
+}DAC_T;
+
+//-------------------------- Extern ----------------------------//
+extern DAC_T dac1;
+
+#endif // __dac_h__

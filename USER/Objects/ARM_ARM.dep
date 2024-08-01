@@ -1,5 +1,5 @@
 Dependencies for Project 'ARM', Target 'ARM': (DO NOT MODIFY !)
-F (.\main.c)(0x66AAA519)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x66AB73C7)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (stm32f4xx.h)(0x62062B64)
 I (..\CORE\core_cm4.h)(0x61F12857)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -50,6 +50,7 @@ I (..\HARDWARE\LCD1\lcd_init.h)(0x66A9A6A8)
 I (..\HARDWARE\LCD1\lcd1.h)(0x6694F9A7)
 I (..\HARDWARE\LCD1\pic.h)(0x5E69B55D)
 I (..\DSP\rfft.h)(0x66AA6A21)
+I (..\HARDWARE\dac.h)(0x66AAF800)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 F (.\stm32f4xx_it.c)(0x6691D69F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
 I (stm32f4xx_it.h)(0x6203D001)
@@ -1719,7 +1720,7 @@ I (..\FWLIB\inc\stm32f4xx_can.h)(0x61F25A2E)
 I (..\FWLIB\inc\stm32f4xx_dac.h)(0x61F25A30)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x61F25A31)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x61F25A36)
-F (..\driver\pwm.c)(0x66A9B316)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+F (..\driver\pwm.c)(0x66AB31B3)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
 I (..\include\pwm.h)(0x66A846B2)
 I (..\SYSTEM\sys.h)(0x5E17DF67)
 I (..\USER\stm32f4xx.h)(0x62062B64)
@@ -2025,7 +2026,7 @@ I (..\FWLIB\inc\stm32f4xx_can.h)(0x61F25A2E)
 I (..\FWLIB\inc\stm32f4xx_dac.h)(0x61F25A30)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x61F25A31)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x61F25A36)
-F (..\HARDWARE\ad.c)(0x66A8BE1F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\ad.o --omf_browse .\objects\ad.crf --depend .\objects\ad.d)
+F (..\HARDWARE\ad.c)(0x66AB293F)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\ad.o --omf_browse .\objects\ad.crf --depend .\objects\ad.d)
 I (..\USER\stm32f4xx.h)(0x62062B64)
 I (..\CORE\core_cm4.h)(0x61F12857)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -2061,8 +2062,9 @@ I (..\FWLIB\inc\stm32f4xx_dac.h)(0x61F25A30)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x61F25A31)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x61F25A36)
 I (..\HARDWARE\ad.h)(0x66A8BE24)
-F (..\HARDWARE\dac.c)(0x66A86F85)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\dac.o --omf_browse .\objects\dac.crf --depend .\objects\dac.d)
-I (..\HARDWARE\dac.h)(0x66A86F3B)
+F (..\HARDWARE\dac.c)(0x66AAFAB5)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\dac.o --omf_browse .\objects\dac.crf --depend .\objects\dac.d)
+I (..\HARDWARE\dac.h)(0x66AAF800)
+I (..\HARDWARE\..\FWlib\inc\stm32f4xx_rcc.h)(0x61F25A3A)
 I (..\USER\stm32f4xx.h)(0x62062B64)
 I (..\CORE\core_cm4.h)(0x61F12857)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -2322,47 +2324,6 @@ I (..\FWLIB\inc\stm32f4xx_dac.h)(0x61F25A30)
 I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x61F25A31)
 I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x61F25A36)
 F (..\DSP\arm_cortexM4lf_math.lib)(0x61F12859)()
-F (..\DSP\fir.c)(0x66A8BA5E)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\fir.o --omf_browse .\objects\fir.crf --depend .\objects\fir.d)
-I (..\DSP\fir.h)(0x66A8BA6A)
-I (..\CORE\arm_math.h)(0x66965650)
-I (..\USER\stm32f4xx.h)(0x62062B64)
-I (..\CORE\core_cm4.h)(0x61F12857)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-I (..\CORE\core_cmInstr.h)(0x61F12857)
-I (..\CORE\core_cmFunc.h)(0x61F12857)
-I (..\CORE\core_cmSimd.h)(0x61F12857)
-I (..\USER\system_stm32f4xx.h)(0x62051C84)
-I (..\USER\stm32f4xx_conf.h)(0x6203D002)
-I (..\FWLIB\inc\stm32f4xx_adc.h)(0x61F25A2D)
-I (..\FWLIB\inc\stm32f4xx_crc.h)(0x61F25A2F)
-I (..\FWLIB\inc\stm32f4xx_dbgmcu.h)(0x61F25A30)
-I (..\FWLIB\inc\stm32f4xx_dma.h)(0x61F25A31)
-I (..\FWLIB\inc\stm32f4xx_exti.h)(0x61F25A33)
-I (..\FWLIB\inc\stm32f4xx_flash.h)(0x61F25A33)
-I (..\FWLIB\inc\stm32f4xx_gpio.h)(0x61F25A36)
-I (..\FWLIB\inc\stm32f4xx_i2c.h)(0x61F25A37)
-I (..\FWLIB\inc\stm32f4xx_iwdg.h)(0x61F25A38)
-I (..\FWLIB\inc\stm32f4xx_pwr.h)(0x61F25A39)
-I (..\FWLIB\inc\stm32f4xx_rcc.h)(0x61F25A3A)
-I (..\FWLIB\inc\stm32f4xx_rtc.h)(0x61F25A3B)
-I (..\FWLIB\inc\stm32f4xx_sdio.h)(0x61F25A3C)
-I (..\FWLIB\inc\stm32f4xx_spi.h)(0x61F25A3D)
-I (..\FWLIB\inc\stm32f4xx_syscfg.h)(0x61F25A3E)
-I (..\FWLIB\inc\stm32f4xx_tim.h)(0x61F25A3E)
-I (..\FWLIB\inc\stm32f4xx_usart.h)(0x61F7A884)
-I (..\FWLIB\inc\stm32f4xx_wwdg.h)(0x61F25A3F)
-I (..\FWLIB\inc\misc.h)(0x61F25A2D)
-I (..\FWLIB\inc\stm32f4xx_cryp.h)(0x61F25A2F)
-I (..\FWLIB\inc\stm32f4xx_hash.h)(0x61F25A37)
-I (..\FWLIB\inc\stm32f4xx_rng.h)(0x61F25A3A)
-I (..\FWLIB\inc\stm32f4xx_can.h)(0x61F25A2E)
-I (..\FWLIB\inc\stm32f4xx_dac.h)(0x61F25A30)
-I (..\FWLIB\inc\stm32f4xx_dcmi.h)(0x61F25A31)
-I (..\FWLIB\inc\stm32f4xx_fsmc.h)(0x61F25A36)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
-I (..\include\usart.h)(0x5720B584)
-I (..\HARDWARE\ad.h)(0x66A8BE24)
 F (..\DSP\rfft.c)(0x66AA8881)(--c99 --gnu -c --cpu Cortex-M4.fp -g -W -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\FWLIB\inc -I ..\HARDWARE -I ..\HARDWARE\LCD1 -I ..\include -I ..\SYSTEM -I ..\USER -I ..\DSP -I ..\fatfs-I.\RTE\_ARM-IC:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING-o .\objects\rfft.o --omf_browse .\objects\rfft.crf --depend .\objects\rfft.d)
 I (..\DSP\rfft.h)(0x66AA6A21)
 I (..\CORE\arm_math.h)(0x66965650)

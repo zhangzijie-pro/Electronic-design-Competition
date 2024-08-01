@@ -65,7 +65,6 @@
 ".\objects\systick.o"
 ".\objects\timer.o"
 "..\DSP\arm_cortexM4lf_math.lib"
-".\objects\fir.o"
 ".\objects\rfft.o"
 --strict --scatter ".\Objects\ARM.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

@@ -25,10 +25,10 @@ int PWM_initialize(void)
 	
 	
 	//TIM8初始化
-	TIM_TimeBaseStructure.TIM_Prescaler = 42-1;                                 //设置预分频值
+	TIM_TimeBaseStructure.TIM_Prescaler = 1-1;                                 //设置预分频值
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;               //向上计数模式
-	TIM_TimeBaseStructure.TIM_Period = 100-1;                                   //自动重装载值
-	TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV4;                   //设置时钟分割 
+	TIM_TimeBaseStructure.TIM_Period = 1680-1;                                   //自动重装载值
+	TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;                   //设置时钟分割 
 	
 	TIM_TimeBaseInit(TIM8,&TIM_TimeBaseStructure);
 	
