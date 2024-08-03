@@ -1,0 +1,109 @@
+---------------------
+Max: 1.631283 index: 3
+Max: 1.574371 index: 1
+Max: 1.546510 index: 2
+Max: 1.481368 index: 4
+Max: 1.462922 index: 5
+---------------------
+Max: 1.571645 index: 3
+Max: 1.542589 index: 6
+Max: 1.528718 index: 1
+Max: 1.517733 index: 2
+Max: 1.493428 index: 5
+---------------------
+Max: 1.360793 index: 1
+Max: 1.353161 index: 4
+Max: 1.335038 index: 2
+Max: 1.285702 index: 5
+Max: 1.276190 index: 3
+---------------------
+Max: 1.414600 index: 1
+Max: 1.413665 index: 19
+Max: 1.394791 index: 2
+Max: 1.347056 index: 4
+Max: 1.330989 index: 5
+---------------------
+Max: 1.156892 index: 1
+Max: 1.131036 index: 2
+Max: 1.125411 index: 4
+Max: 1.109290 index: 5
+Max: 1.056826 index: 6
+---------------------
+Max: 1.292436 index: 1
+Max: 1.284719 index: 2
+Max: 1.245013 index: 4
+Max: 1.219038 index: 6
+Max: 1.213568 index: 3
+---------------------
+Max: 1.630697 index: 19
+Max: 1.539420 index: 6
+Max: 1.530282 index: 5
+Max: 1.520265 index: 1
+Max: 1.511110 index: 2
+---------------------
+Max: 1.435653 index: 1
+Max: 1.434066 index: 2
+Max: 1.399137 index: 4
+Max: 1.397909 index: 7
+Max: 1.339655 index: 5
+---------------------
+Max: 1.034363 index: 2
+Max: 1.031928 index: 1
+Max: 1.018020 index: 4
+Max: 0.962416 index: 5
+Max: 0.944631 index: 3
+---------------------
+Max: 1.606864 index: 19
+Max: 1.410436 index: 1
+Max: 1.403022 index: 2
+Max: 1.353248 index: 5
+Max: 1.352679 index: 6
+---------------------
+Max: 1.404515 index: 6
+Max: 1.320956 index: 2
+Max: 1.316389 index: 4
+Max: 1.310857 index: 1
+Max: 1.284886 index: 3
+---------------------
+Max: 1.298985 index: 7
+Max: 1.298643 index: 5
+Max: 1.291699 index: 3
+Max: 1.281916 index: 2
+Max: 1.273504 index: 1
+---------------------
+Max: 2.010922 index: 14
+Max: 1.475798 index: 1
+Max: 1.420057 index: 2
+Max: 1.419633 index: 4
+Max: 1.408491 index: 9
+---------------------
+Max: 2.016844 index: 14
+Max: 1.401331 index: 1
+Max: 1.357602 index: 2
+Max: 1.269315 index: 3
+Max: 1.268271 index: 4
+---------------------
+Max: 2.113138 index: 14
+Max: 1.668349 index: 2
+Max: 1.654803 index: 1
+Max: 1.576905 index: 5
+Max: 1.562169 index: 4
+---------------------
+Max: 1.758535 index: 14
+Max: 1.175787 index: 2
+Max: 1.130370 index: 3
+Max: 1.125984 index: 4
+Max: 1.114008 index: 1
+---------------------
+Max: 1.743132 index: 14
+Max: 1.283051 index: 3
+Max: 1.213298 index: 1
+Max: 1.208646 index: 5
+Max: 1.180592 index: 2
+---------------------
+Max: 1.926003 index: 14
+Max: 1.366400 index: 3
+Max: 1.275938 index: 6
+Max: 1.272047 index: 4
+Max: 1.246088 index: 1
+---------------------

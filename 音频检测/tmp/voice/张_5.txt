@@ -1,0 +1,67 @@
+---------------------
+Max: 1.475243 index: 1
+Max: 1.408538 index: 3
+Max: 1.357464 index: 2
+Max: 1.351276 index: 4
+Max: 1.277365 index: 5
+---------------------
+Max: 1.409283 index: 1
+Max: 1.403130 index: 4
+Max: 1.398185 index: 2
+Max: 1.331096 index: 6
+Max: 1.300007 index: 5
+---------------------
+Max: 1.586726 index: 3
+Max: 1.481482 index: 2
+Max: 1.397939 index: 1
+Max: 1.343733 index: 4
+Max: 1.321219 index: 5
+---------------------
+Max: 1.619934 index: 4
+Max: 1.552125 index: 2
+Max: 1.513608 index: 5
+Max: 1.502664 index: 1
+Max: 1.499710 index: 7
+---------------------
+Max: 1.428797 index: 3
+Max: 1.278557 index: 1
+Max: 1.207871 index: 7
+Max: 1.203441 index: 2
+Max: 1.157027 index: 6
+---------------------
+Max: 1.768049 index: 4
+Max: 1.591304 index: 7
+Max: 1.581754 index: 2
+Max: 1.572643 index: 5
+Max: 1.557364 index: 1
+---------------------
+Max: 1.585912 index: 3
+Max: 1.424208 index: 2
+Max: 1.348904 index: 1
+Max: 1.314339 index: 7
+Max: 1.258402 index: 6
+---------------------
+Max: 1.416421 index: 4
+Max: 1.318162 index: 5
+Max: 1.240227 index: 1
+Max: 1.226869 index: 2
+Max: 1.180087 index: 6
+---------------------
+Max: 1.442501 index: 1
+Max: 1.382085 index: 3
+Max: 1.317216 index: 2
+Max: 1.221700 index: 5
+Max: 1.221474 index: 4
+---------------------
+Max: 1.304523 index: 1
+Max: 1.287002 index: 3
+Max: 1.227756 index: 2
+Max: 1.199763 index: 4
+Max: 1.186709 index: 5
+---------------------
+Max: 1.737088 index: 4
+Max: 1.631071 index: 2
+Max: 1.629902 index: 5
+Max: 1.568709 index: 1
+Max: 1.557740 index: 6
+---------------------

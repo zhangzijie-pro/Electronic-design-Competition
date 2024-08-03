@@ -50,8 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
-# 忽略 USER 文件夹下的 include 文件夹中的所有内容
-USER/include/
+
 
 # 忽略 USER 文件夹下的 object 文件夹中的所有内容
 USER/object/

@@ -628,16 +628,6 @@
           <GroupName>driver</GroupName>
           <Files>
             <File>
-              <FileName>dma.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\driver\dma.c</FilePath>
-            </File>
-            <File>
-              <FileName>exti.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\driver\exti.c</FilePath>
-            </File>
-            <File>
               <FileName>fsmc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\driver\fsmc.c</FilePath>
@@ -668,19 +658,9 @@
           <GroupName>hardware</GroupName>
           <Files>
             <File>
-              <FileName>ads8361.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\ads8361.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_key.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\bsp_key.c</FilePath>
-            </File>
-            <File>
-              <FileName>DAC8550.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\DAC8550.c</FilePath>
             </File>
             <File>
               <FileName>LED.c</FileName>
@@ -726,11 +706,6 @@
               <FileName>sys.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\SYSTEM\sys.c</FilePath>
-            </File>
-            <File>
-              <FileName>systick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\SYSTEM\systick.c</FilePath>
             </File>
             <File>
               <FileName>Timer.c</FileName>

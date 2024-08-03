@@ -91,7 +91,7 @@ int main(){
 	
 		// PWM 按键档位控制
 		if(Key1){							// 1档*
-			PWM_set_compare(400);
+			PWM_set_compare(550);
 			LED_GREEN_OFF;
 			LED_RED_ON;
 			LED_BLUE_OFF;
@@ -140,15 +140,15 @@ int main(){
 			shield_type =2;
 		}
 		
-		if(Key8){		// 自动识别
-			auto_state = true;
-			auto_voice_source_func();
-		}
-	
-		if(Key9){
-			auto_state = false;
-			open_U();
-		}
+//		if(Key8){		// 自动识别
+//			auto_state = true;
+//			auto_voice_source_func();
+//		}
+//	
+//		if(Key9){
+//			auto_state = false;
+//			open_U();
+//		}
 	
 	}
 }
@@ -184,13 +184,11 @@ void FFT(void)
 				if (index > (FFT_LENGTH/2)){
 						index = 1024- index;
 				}
-//				usart4.printf("Max: %f index: %d\r\n", Max, index);
 				one_part_index[i]=index;
 				lBufOutArray[index] = 0;
 				lBufOutArray[1024 - index] = 0;
 		}
 		  low_high_sort(one_part_index,3);
-//		usart4.printf("------------------------\r\n");
 }
 
 // 交换两个整数的值
@@ -317,7 +315,6 @@ void voice_source_func(void)
 		{
 			if(auto_state){
 				open_U();
-				//GPIO_ResetBits(GPIOA,GPIO_Pin_4);
 			}
 			Voice_Exist = false;
 			LCD_ShowString(80,60,"Unexist",WHITE,BLACK,12,0);
