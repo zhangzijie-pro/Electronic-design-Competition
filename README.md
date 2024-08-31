@@ -1,12 +1,13 @@
 # Electronic-design-Competition
-code of stm32f407IGT6
-该仓库为stm32f407固件库内容
+
+该仓库为stm32f407固件库内容编写的电赛G题声音屏蔽器,freertos分支为FreeRTOS的示例教程内容
 
 编码以GB2312打开
 
 ## 文件格式
-CORE FWLIB属于库文件
+CORE FWLIB DSP SYSTEM属于库文件
 
+音频检测: Python用FFT输出的TOP3频率序号分类音乐和语音
 添加代码内容至[OBJ](./OBJ)文件夹
 
 main在USER中的main.c
