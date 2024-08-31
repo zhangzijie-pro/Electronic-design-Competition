@@ -1,6 +1,7 @@
 # FreeRTOS Guide
 
 ## [FreeRTOS  Home](http://www.freertos.org/)
+#### CSDN教程: https://blog.csdn.net/qq_61672347/article/details/125748646
 
 该分支列举STM32与DSP,FreeRTOS库
 
